@@ -70,10 +70,10 @@ table {
 */
 
 body {
-    /* background-color: #faf8f4; */
-    background-color: #333333;
+    background-color: #faf8f4;
     font-family: 'proxima-nova', sans-serif;
     color: #333333;
+    overflow-x: hidden;
 }
 a,
 a:link,
@@ -233,7 +233,9 @@ dl {
 */
 
 .header-section {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 999;
     height: 70px;
     width: 100%;
@@ -289,6 +291,7 @@ dl {
         display: flex;
         align-items: center;
         margin-left: auto;
+        cursor: pointer;
     }
     .header-section .logo {
         max-width: 275px;
@@ -303,6 +306,107 @@ dl {
 .content {
     position: relative;
     width: 100%;
+}
+
+.contentRender_name_plugins_core_textbox {
+    width: 100%;
+    max-width: 1145px;
+    margin: 0 auto;
+    padding: 0 15px 15px;
+}
+
+.row {
+	max-width: 1145px;
+    margin: 0 auto;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: inherit;
+}
+
+.controlled-width {
+    width: 100%;
+    max-width: 1145px;
+    margin: 0 auto;
+}
+
+.panel-two-col {
+    position: relative;
+    display: block;
+}
+
+.panel-two-col .custom-column > .contentRender_name_plugins_core_textbox {padding: 0;}
+
+.intro-panel {
+    width: 100%;
+    max-width: 975px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.intro-panel .title-cont {
+    margin-bottom: 15px;
+}
+
+.intro-panel span[class*="intro-"] {
+    display: block;
+}
+
+.intro-panel .intro-title1 {
+    font-weight: 100;
+    font-size: 44px;
+    line-height: 34px;
+}
+
+.intro-panel .intro-title2 {
+    font-size: 48px;
+    line-height: 34px;
+}
+
+.intro-panel .intro-title3 {
+    font-family: 'Covered By Your Grace', cursive;
+    color: #db6027;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.shared-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400 !important;
+    color: white !important;
+}
+
+.shared-btn > img {
+    margin-left: 10px;
+    padding-bottom: 2px;
+}
+
+@media (min-width: 1025px) {
+    .intro-panel {
+        margin-bottom: 120px;
+    }
+    .intro-panel .inner-wrapper {
+        display: flex;
+    }
+    .intro-panel .intro-title1,
+    .intro-panel .intro-title2 {
+        font-size: 72px;
+        line-height: 66px;
+    }
+    .intro-panel .intro-title1 {
+        margin-right: 10px;
+    }
+    .intro-panel .intro-title3 {
+        font-size: 30px;
+        line-height: 28px;
+    }
 }
 
 /*
