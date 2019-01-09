@@ -186,6 +186,87 @@
     background-color: #09373e;
 }
 
+.nav-industry {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-industry ul {
+    display: none;
+    margin: 0 0 0 15px;
+    list-style: none;
+}
+
+.nav-industry .has-submenu.active > ul {
+    display: block;
+}
+
+.nav-industry ul ul {
+    margin: 0 0 0 25px;
+}
+
+.nav-industry .ind-item {
+    width: 100%;
+}
+
+.nav-industry .ind-item:last-child {
+    margin-bottom: 0;
+}
+
+.nav-industry .ind-item .item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.nav-industry .ind-item .item-inner a {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #15808f;
+}
+
+.nav-industry .ind-item .item-inner i {
+    color: #15808f;
+    cursor: pointer;
+}
+
+.nav-industry .ind-item ul .item-inner a {
+    font-size: 16px;
+}
+
+.nav-industry .has-submenu.active > .item-inner i {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 641px) {
+    .nav-industry {
+        flex-direction: row;
+        margin-right: 15px;
+    }
+    .nav-industry .ind-item {
+        width: auto;
+        margin-right: 15px;
+    }
+    .nav-industry .ind-item a {
+        font-size: 16px;
+    }
+    .nav-industry .ind-item:last-child {
+        margin-right: 0;
+    }
+    .nav-industry .ind-item i {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 850px) {
+    .nav-industry .ind-item {
+        margin-right: 30px;
+    }
+}
+
 /*
 |-----------------------------------------------------------------------------------------------------------
 | Interior Nav Widget 
@@ -199,6 +280,44 @@
 |-----------------------------------------------------------------------------------------------------------
 */
 
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 15px;
+}
+
+.footer-nav .left-col,
+.footer-nav .right-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 11px;
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .footer-nav {
+        flex-direction: row;
+        order: 1;
+    }
+    .footer-nav .left-col {
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .footer-nav {
+        margin-left: auto;
+    }
+    .footer-nav .left-col {
+        margin-right: 45px;
+    }
+}
 
 /*
 |-----------------------------------------------------------------------------------------------------------

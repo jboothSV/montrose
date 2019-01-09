@@ -92,6 +92,7 @@
 
     <!-- //////  BODY  //////// -->
     <section class="content">
+        <div class="homepage-bg"></div>
         <div class="intro-panel">
             <div class="contentRender_name_plugins_core_textbox">
                 <h1 class="title-cont">
@@ -173,14 +174,22 @@
                             <img src="includes/public/assets/images/highlight.png" alt="">
                         </div>
                         <div class="slide-content">
-                            <div class="date-block">
-                                <span class="day">19</span>
-                                <span class="month">nov</span>
-                            </div>
-                            <div class="inner-content">
-                                <h6>Women's Empowerment Group</h6>
-                                <span class="date-range">November 19, 2018 - November 22, 2018</span>
-                                <a href="/" class="link">view details</a>
+                            <div>
+                                <div class="date-block mobile">
+                                    <span class="day">19</span>
+                                    <span class="date-block-month">nov</span>
+                                </div>
+                                <div class="inner-content">
+                                    <div class="date-block desktop">
+                                        <span class="day">19</span>
+                                    </div>
+                                    <div class="title-wrapper">
+                                        <span class="date-block-month">nov</span>
+                                        <h6>Women's Empowerment Group</h6>
+                                        <span class="date-range">November 19, 2018 - November 22, 2018</span>
+                                        <a href="/" class="link">view details</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -195,7 +204,7 @@
                                     <p>
                                         Montrose Visual 27th Annual Art Exhibition and Sale
                                     </p>
-                                    <a href="/" class="view-more">view</a>
+                                    <div class="view-more"><a href="/">view</a></div>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +216,7 @@
                                     <p>
                                         Bow Wow Film Festival
                                     </p>
-                                    <a href="/" class="view-more">view</a>
+                                    <div class="view-more"><a href="/">view</a></div>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +228,7 @@
                                     <p>
                                         Montrose Visual 27th Annual Art Exhibition and Sale
                                     </p>
-                                    <a href="/" class="view-more">view</a>
+                                    <div class="view-more"><a href="/">view</a></div>
                                 </div>
                             </div>
                         </div>
@@ -231,14 +240,262 @@
                                     <p>
                                         Bow Wow Film Festival
                                     </p>
-                                    <a href="/" class="view-more">view</a>
+                                    <div class="view-more"><a href="/">view</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- two col highlights -->
+        <div class="tiles">
+            <div class="tile">
+                <a href="/">
+                    <div class="img-cont" style="background:url('includes/public/assets/images/tile.png')center/cover no-repeat;"></div>
+                    <div class="slide-content">
+                        <div class="title-cont">
+                            <span class="date">30 october 2018</span>
+                            <h5>mellow river hike near ridgeway colorado</h5>
+                        </div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="/">
+                    <div class="img-cont" style="background:url('includes/public/assets/images/tile.png')center/cover no-repeat;"></div>
+                    <div class="slide-content">
+                        <div class="title-cont">
+                            <span class="date">30 october 2018</span>
+                            <h5>mellow river hike near ridgeway colorado</h5>
+                        </div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="/">
+                    <div class="img-cont" style="background:url('includes/public/assets/images/tile.png')center/cover no-repeat;"></div>
+                    <div class="slide-content">
+                        <div class="title-cont">
+                            <span class="date">30 october 2018</span>
+                            <h5>mellow river hike near ridgeway colorado</h5>
+                        </div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div><!-- tiles -->
+        <div class="social-panel">
+            <style>
+                .social-panel {
+                    margin-bottom: 50px;
+                }
+                .social-panel .title-cont {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 15px 35px;
+                    width: 100%;
+                    max-width: 915px;
+                    margin: 0 auto;
+                }
+                .social-panel .title-cont span {
+                    display: inline-block;
+                }
+                .social-panel .title {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .social-panel .title h2 {
+                    margin: 0 0 20px;
+                }
+                .social-panel .title .title1 {
+                    font-family: 'Covered By Your Grace', cursive;
+                    color: #db6027;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-transform: none;
+                }
+                .social-panel .title .title2,
+                .social-panel .title .title3 {
+                    font-size: 44px;
+                    line-height: 36px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    color: #15808f;
+                }
+                .social-panel .title-cont .desc {
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 500px;
+                }
+                @media (min-width: 641px) {
+                    .social-panel .title-cont {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                    }
+                    .social-panel .title {
+                        margin: 0 15px 0 0;
+                    }
+                }
+                @media (min-width: 1025px) {
+                    .social-panel {
+                        margin-bottom: 135px;
+                    }
+                    .social-panel .title .title1 {
+                        font-size: 56px;
+                        line-height: 48px;
+                    }
+                    .social-panel .title .title2, 
+                    .social-panel .title .title3 {
+                        font-size: 58px;
+                        line-height: 46px;
+                    }
+                }
+            </style>
+            <div class="title-cont">
+                <h2 class="title">
+                    <span class="title1">start</span>
+                    <span class="title2">your</span>
+                    <span class="title3">journey</span>
+                </h2>
+                <p class="desc">
+                    Sharing your Montrose exploits and escapades with family and friends? Share them with us, too!
+                </p>
+            </div>
+            <div class="inner-panel">
+                <img src="includes/public/assets/images/stackla-sm.png" class="show-for-small-only" style="display:block;width:100%" alt="">
+                <img src="includes/public/assets/images/stackla-lg.png" class="hide-for-small-only" style="display:block;width:100%" alt="">
+            </div>
+        </div><!-- social panel -->
+        <div class="carousel">
+            <div class="title-cont">
+                <h2 class="title">
+                    <span class="title1">create</span>
+                    <span class="title2">unique</span>
+                    <span class="title3">memories</span>
+                </h2>
+                <p class="desc">
+                    Whether you are just passing through town or planning to stay for a few days, Montrose offers a hearty selection of lodging and dining options that will suit every taste and budget.
+                </p>
+            </div>
+            <div class="slider">
+                <div class="arrow-cont"></div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    var root = $(".carousel");
+                    var slider = root.find(".slider");
+                    var arrows = root.find(".arrow-cont");
+                    slider.slick({
+                        infinite: true,
+                        arrows: true,
+                        dots: false,
+                        autoplay: false,
+                        prevArrow: '<div class="custom-arrow prev"><div type="button" data-role="none" class="slick-prev" aria-label="previous"><i class="fas fa-angle-left"></i></div></div>',
+                        nextArrow: '<div class="custom-arrow next"><div type="button" data-role="none" class="slick-next" aria-label="next"><i class="fas fa-angle-right"></i></div></div>',
+                        appendArrows: arrows,
+                        variableWidth: true,
+                        centerMode: true,
+                        slidesToShow: 5,
+                        slide: ".item"
+                    });
+                    $(window).on('resize orientationchange', function() {
+                        slider.slick('resize');
+                    });
+                });
+            </script> 
+        </div><!-- carousel -->
     </section>
 
     <!-- /////  FOOTER INCLUDE  ////// -->
