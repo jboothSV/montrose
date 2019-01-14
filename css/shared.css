@@ -1,0 +1,609 @@
+/*
+|-----------------------------------------------------------------------------------------------------------
+| FONTS
+|-----------------------------------------------------------------------------------------------------------
+|
+*/
+/*
+
+Place all custom fonts here for reference
+
+    font-family: 'proxima-nova', sans-serif;
+
+    font-family: 'Covered By Your Grace', cursive;
+
+*/
+/*
+|-----------------------------------------------------------------------------------------------------------
+| RESET STYLES
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+html,body,div,span,applet,object,iframe,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,center,dl,
+dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block; }
+
+body { line-height: 1; }
+
+p ol,
+p ul { list-style: none; }
+
+blockquote,
+q { quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------
+| GLOBAL TAG STYLES
+|-----------------------------------------------------------------------------------------------------------
+*/
+html,
+body {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    background-color: #faf8f4;
+    font-family: 'proxima-nova', sans-serif;
+    color: #333333;
+    overflow-x: hidden;
+}
+.homepage-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+a,
+a:link,
+a:visited,
+a:focus {
+    color: #db6027;
+    font-weight: bold;
+}
+h1 {
+    color: #15808f;
+    font-size: 40px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+h2 {
+    color: #15808f;
+    font-size: 38px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+h3 {
+    color: #db6027;
+    font-size: 36px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-style: normal;
+    line-height: 34px;
+}
+h4 {
+    color: #d44f5b;
+    font-size: 24px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+h5 {
+    color: #333333;
+    font-size: 22px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+h6 {
+    color: #15808f;
+    font-size: 22px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+    h2 {
+        font-size: 38px;
+        line-height: 30px;
+    }
+}
+@media (min-width: 641px) {
+    h3 {
+        font-size: 48px;
+        line-height: 20px;
+    }
+    h4 {
+        font-size: 36px;
+        line-height: 24px;
+    }
+    h5 {
+        font-size: 32px;
+        line-height: 20px;
+    }
+    h6 {
+        font-size: 26px;
+        line-height: 18px;
+    }
+}
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 56px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 24px;
+    }
+}
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+p {
+    font-size: 17px;
+    line-height: 24px; 
+    margin-bottom: 1.25rem;
+}
+@media (min-width: 641px) {
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+p, 
+table tr th, 
+table tr td {
+    font-family: Arial, Helvetica, serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #2d2d2d;
+    margin: 0 0 20px;
+}
+ul,
+ol,
+dl {
+    color: #333333;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'proxima-nova', sans-serif;
+}
+.wrapper img { border: medium none; }
+::-webkit-input-placeholder {
+    color: #c9bea7;
+    opacity: 1;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    
+    color: #c9bea7;
+    opacity: 1;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    color: #c9bea7;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #c9bea7;
+    opacity: 1;
+}
+/*
+|-----------------------------------------------------------------------------------------------------------
+| HEADER SECTION
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.header-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-section .top-nav-cont {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-section .header-right {
+    display: none;
+}
+
+.header-section .logo {
+    width: 100%;
+    max-width: 160px;
+}
+
+.header-section .logo img {
+    display: block;
+    width: 100%;
+}
+
+.header-section .mobilenav .weather-cont {
+    padding: 12px;
+}
+
+.header-section .utilities {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 641px) {
+    .header-section .logo {
+        max-width: 170px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-section {
+        height: 110px;
+    }
+    .header-section .top-nav-cont {
+        padding: 20px 15px;
+    }
+    .header-section .header-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .header-section .logo {
+        max-width: 275px;
+    }
+}
+/*
+|-----------------------------------------------------------------------------------------------------------
+| BODY SECTION
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
+@media(min-width: 1025px) {
+    .content {
+        padding-bottom: 230px;
+        z-index: 1;
+    }
+    .homepage-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../includes/public/assets/images/homepage-bg.png")bottom/100% no-repeat;
+        filter: grayscale(100%);
+        z-index: -1;
+    }
+    .homepage-bg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(250, 248, 244,0.75) 0%, rgba(250, 248, 244, 1) 30%);
+    }
+}
+
+.contentRender_name_plugins_core_textbox {
+    width: 100%;
+    max-width: 1145px;
+    margin: 0 auto;
+    padding: 0 15px 15px;
+}
+
+.row {
+	max-width: 1145px;
+    margin: 0 auto;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: inherit;
+}
+
+.controlled-width {
+    width: 100%;
+    max-width: 1145px;
+    margin: 0 auto;
+}
+
+.panel-two-col {
+    position: relative;
+    display: block;
+}
+
+.panel-two-col .custom-column > .contentRender_name_plugins_core_textbox {padding: 0;}
+
+.intro-panel {
+    width: 100%;
+    max-width: 975px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.intro-panel .title-cont {
+    margin-bottom: 15px;
+}
+
+.intro-panel span[class*="intro-"] {
+    display: block;
+}
+
+.intro-panel .intro-title1 {
+    font-weight: 100;
+    font-size: 44px;
+    line-height: 34px;
+}
+
+.intro-panel .intro-title2 {
+    font-size: 48px;
+    line-height: 34px;
+}
+
+.intro-panel .intro-title3 {
+    font-family: 'Covered By Your Grace', cursive;
+    color: #db6027;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.shared-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400 !important;
+    color: white !important;
+}
+
+.shared-btn > img {
+    margin-left: 10px;
+    padding-bottom: 2px;
+}
+
+@media (min-width: 1025px) {
+    .intro-panel {
+        margin-bottom: 120px;
+    }
+    .intro-panel .inner-wrapper {
+        display: flex;
+    }
+    .intro-panel .intro-title1,
+    .intro-panel .intro-title2 {
+        font-size: 72px;
+        line-height: 66px;
+    }
+    .intro-panel .intro-title1 {
+        margin-right: 10px;
+    }
+    .intro-panel .intro-title3 {
+        font-size: 30px;
+        line-height: 28px;
+    }
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------
+| FOOTER SECTION
+|-----------------------------------------------------------------------------------------------------------
+*/
+
+.footer {
+    position: relative;
+}
+
+.footer .controlled-footer {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-top .controlled-footer {
+    padding: 0;
+}
+
+.footer .flex-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-top {
+    position: relative;
+    padding: 30px 15px;
+    background-color: white;
+    z-index: 1;
+}
+
+.footer .footer-top::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: url("../includes/public/assets/images/footer-edge.png")center/cover repeat-x;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    background-color: #007f8f;
+    padding: 20px 0 0;
+}
+
+.footer .footer-bottom h4 {
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 600;
+    color: white;
+    text-transform: none;
+    margin: 0 auto 10px;
+    width: 85%;
+}
+
+.footer .footer-bottom ul {
+    margin: 0 0 15px;
+    list-style: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.footer .footer-logo {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 15px;
+}
+
+.footer .footer-logo,
+.footer .sponsor {
+    margin-bottom: 10px;
+}
+.footer .footer-lower {
+    padding: 15px;
+    background-color: #00717f;
+}
+
+.footer .footer-lower span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: white;
+}
+
+.footer .footer-lower .made-by {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+}
+
+@media (min-width: 641px) {
+    .footer .footer-bottom {
+        text-align: left;
+    }
+    .footer .flex-cont {
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer .footer-bottom h4 {
+        width: 100%;
+    }
+    .footer .controlled-footer {
+        flex-direction: row;
+        padding: 0 15px;
+    }
+    .footer .sponsor {
+        order: 2;
+        margin: 0 0 0 25px;
+    }
+    .footer .footer-lower .controlled-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+    .footer .footer-lower span,
+    .footer .footer-lower .made-by {
+        margin: 0;
+    }
+    .footer .footer-bottom .flex-cont.upper {
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+    .footer .footer-bottom .flex-cont.lower {
+        justify-content: space-between;
+    }
+    .footer .footer-logo, 
+    .footer .sponsor {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .footer .footer-logo {
+        padding: 0;
+        margin: 0 3.5%;
+    }
+    .footer .footer-bottom .flex-cont.lower {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .footer .sponsor {
+        margin-left: auto;
+    }
+    .footer .footer-bottom .controlled-footer {
+        padding: 35px 0;
+    }
+    .footer .footer-lower .controlled-footer {
+        padding: 10px 0;
+    }
+}
+

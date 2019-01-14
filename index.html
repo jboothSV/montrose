@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Simpleville CVB Cutup</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/includes/public/assets/images/favicon.ico" type="image/x-icon" />
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href="css/foundation.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link href="css/shared.css" rel="stylesheet" type="text/css" />
+    <link href="css/search.css" rel="stylesheet" type="text/css" />
+    <link href="css/slideshow.css" rel="stylesheet" type="text/css" />
+    <link href="css/collections.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav-shared.css" rel="stylesheet" type="text/css" />
+    <link href="css/social.css" rel="stylesheet" type="text/css" />
+    <link href="css/shared-form.css" rel="stylesheet" type="text/css" />
+
+    <script src="//code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript"  src="js/foundation.reveal.js"></script>
+    <script type="text/javascript" src="js/foundation.equalizer.js"></script>
+    <script type="text/javascript" src="js/jquery.onscreen.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>    
+
+    <!-- CUSTOM FONTS CODE -->
+    <link rel="stylesheet" href="https://use.typekit.net/awm4idr.css">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ///// HEADER INCLUDE ///// -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- //////  HEADER  SLIDESHOW //////// -->
+
+    <section class="header-slideshow">
+        <div class="home-header">
+            <div class="item">
+                <picture>
+                    <source srcset="includes/public/assets/images/home-slide-sm.png" media="(max-width: 640px)">
+                    <img src="includes/public/assets/images/home-slide.png" alt="">
+                </picture>
+                <div class="slide-content">
+                    <a href="/">
+                        <h2>Black Canyon National Park</h2>
+                    </a>
+                    <p class="desc">
+                        There is no exaggeration in saying that the Black Canyon National Park is one of the nation’s most breathtaking scenic treasures. <a href="/">learn more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="includes/public/assets/images/home-slide-sm.png" media="(max-width: 640px)">
+                    <img src="includes/public/assets/images/home-slide.png" alt="">
+                </picture>
+                <div class="play-btn">
+                    <img src="includes/public/assets/images/vid-play.png" alt="Play Video Button">
+                </div>
+                <div class="slide-content">
+                    <a href="/">
+                        <h2>Slide Number Two</h2>
+                    </a>
+                    <p class="desc">
+                        There is no exaggeration in saying that the Black Canyon National Park is one of the nation’s most breathtaking scenic treasures. <a href="/">learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $('.home-header').slick({
+                infinite: true,
+                arrows: false,
+                dots: true,
+                autoplay: false,
+                fade: true
+            });
+
+            $(window).on('resize orientationchange', function() {
+                $('.home-header').slick('resize');
+            });
+
+        });
+    </script>   
+
+    <!-- //////  BODY  //////// -->
+    <section class="content">
+        <div class="homepage-bg"></div>
+        <div class="intro-panel">
+            <div class="contentRender_name_plugins_core_textbox">
+                <h1 class="title-cont">
+                    <div class="inner-wrapper">
+                        <span class="intro-title1">meet</span>
+                        <span class="intro-title2">montrose</span>
+                    </div>
+                    <span class="intro-title3">historic colorado</span>
+                </h1>
+                <p>
+                    Montrose is a historic Colorado town on the beautiful Western Slope of the Rocky Mountains, perched in the perfect spot to serve as your base camp for year-round outdoor adventure. The city made Outdoor Life magazine's list of "Top 200 Towns for Outdoorsmen" in 2010 because it is surrounded by vast stretches of public lands where visitors can enjoy a seemingly endless variety of outdoor activities throughout the year.
+                </p>
+            </div>
+        </div><!-- intro panel -->
+        <div class="showcase">
+            <div class="torn"></div>
+            <div class="slider">
+                <div class="arrow-cont">
+                    <div class="prev-arrow">
+                            <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="next-arrow">
+                            <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="item" data-slide="1">
+                    <div class="title">
+                        <h2>Curecanti National Recreation Area</h2>
+                    </div>
+                    <div class="img-cont">
+                        <img src="includes/public/assets/images/showcase.png" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>Curecanti National Recreation Area</h2>
+                        </div>
+                        <p>
+                            Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
+                        </p>
+                        <a href="/" class="link">learn more</a>
+                    </div>
+                </div>
+                <div class="item" data-slide="2">
+                    <div class="title">
+                        <h2>Slide Number Two</h2>
+                    </div>
+                    <div class="img-cont">
+                        <img src="includes/public/assets/images/showcase.png" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>SLide number tow</h2>
+                        </div>
+                        <p>
+                            Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
+                        </p>
+                        <a href="/" class="link">learn more</a>
+                    </div>
+                </div>
+                <div class="item" data-slide="3">
+                    <div class="title">
+                        <h2>Slide Number Three</h2>
+                    </div>
+                    <div class="img-cont">
+                        <img src="includes/public/assets/images/showcase.png" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>Slide Number Three</h2>
+                        </div>
+                        <p>
+                            Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
+                        </p>
+                        <a href="/" class="link">learn more</a>
+                    </div>
+                </div>
+                <div class="item" data-slide="4">
+                    <div class="title">
+                        <h2>Slide Number Four</h2>
+                    </div>
+                    <div class="img-cont">
+                        <img src="includes/public/assets/images/showcase.png" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>Slide Number Four</h2>
+                        </div>
+                        <p>
+                            Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
+                        </p>
+                        <a href="/" class="link">learn more</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/" class="shared-btn" style="background-color:#dd515c;">things to do <img src="includes/public/assets/images/btn-arrow.png" alt="arrow"></a>
+            <script>
+                $(document).ready(function(){
+                    var root = $(".showcase");
+                    var slider = root.find(".slider");
+                    var slides = slider.find(".item");
+                    var z = slides.length;
+
+                    slider.on("init", function(event, slick){
+                        var activeSlides = slider.find(".slick-active");
+                        var length = activeSlides.length;
+                        var last = $(activeSlides[length-1]);
+                        last.addClass("last-active");
+                    });
+
+                    slider.slick({
+                        infinite: true,
+                        arrows: true,
+                        dots: false,
+                        autoplay: false,
+                        fade: false,
+                        prevArrow: '<div class="custom-arrow prev"><div type="button" data-role="none" class="slick-prev" aria-label="previous"><i class="fas fa-angle-left"></i></div></div>',
+                        nextArrow: '<div class="custom-arrow next"><div type="button" data-role="none" class="slick-next" aria-label="next"><i class="fas fa-angle-right"></i></div></div>',
+                        slide: ".item",
+                        slidesToShow: 3,
+                        responsive: [
+                            {
+                                breakpoint: 640,
+                                settings: {
+                                    fade: true,
+                                    slidesToShow: 1 
+                                }
+                            }
+                        ]
+                    });
+
+                    slider.on("beforeChange", function(event, slick, currentSlide, nextSlide){
+                        var current = $(slick.$slides[nextSlide]);
+                        var next = current.next();
+                        slides.each(function(){
+                            if($(this).hasClass("last-active")){
+                                $(this).removeClass("last-active");
+                            }
+                        });
+                    });
+
+                });
+            </script>
+        </div><!-- showcase -->
+        <div class="two-col-highlights">
+            <div class="inner">
+                <div class="left-col">
+                    <div class="title">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="highlight">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/highlight.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <div>
+                                <div class="date-block mobile">
+                                    <span class="day">19</span>
+                                    <span class="date-block-month">nov</span>
+                                </div>
+                                <div class="inner-content">
+                                    <div class="date-block desktop">
+                                        <span class="day">19</span>
+                                    </div>
+                                    <div class="title-wrapper">
+                                        <span class="date-block-month">nov</span>
+                                        <h6>Women's Empowerment Group</h6>
+                                        <span class="date-range">November 19, 2018 - November 22, 2018</span>
+                                        <a href="/" class="link">view details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="feed">
+                        <div class="feed-item">
+                            <div class="month">november</div>
+                            <div class="item-inner">
+                                <div class="content-block">
+                                    <span>14</span>
+                                    <p>
+                                        Montrose Visual 27th Annual Art Exhibition and Sale
+                                    </p>
+                                    <div class="view-more"><a href="/">view</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="month">november</div>
+                            <div class="item-inner">
+                                <div class="content-block">
+                                    <span>21</span>
+                                    <p>
+                                        Bow Wow Film Festival
+                                    </p>
+                                    <div class="view-more"><a href="/">view</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="month">november</div>
+                            <div class="item-inner">
+                                <div class="content-block">
+                                    <span>14</span>
+                                    <p>
+                                        Montrose Visual 27th Annual Art Exhibition and Sale
+                                    </p>
+                                    <div class="view-more"><a href="/">view</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="month">november</div>
+                            <div class="item-inner">
+                                <div class="content-block">
+                                    <span>21</span>
+                                    <p>
+                                        Bow Wow Film Festival
+                                    </p>
+                                    <div class="view-more"><a href="/">view</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- two col highlights -->
+        <div class="tiles">
+            <div class="tile">
+                <a href="/">
+                    <div class="img-cont" style="background:url('includes/public/assets/images/tile.png')center/cover no-repeat;"></div>
+                    <div class="slide-content">
+                        <div class="title-cont">
+                            <span class="date">30 october 2018</span>
+                            <h5>mellow river hike near ridgeway colorado</h5>
+                        </div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="/">
+                    <div class="img-cont" style="background:url('includes/public/assets/images/tile.png')center/cover no-repeat;"></div>
+                    <div class="slide-content">
+                        <div class="title-cont">
+                            <span class="date">30 october 2018</span>
+                            <h5>mellow river hike near ridgeway colorado</h5>
+                        </div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="/">
+                    <div class="img-cont" style="background:url('includes/public/assets/images/tile.png')center/cover no-repeat;"></div>
+                    <div class="slide-content">
+                        <div class="title-cont">
+                            <span class="date">30 october 2018</span>
+                            <h5>mellow river hike near ridgeway colorado</h5>
+                        </div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div><!-- tiles -->
+        <div class="social-panel">
+            <style>
+                .social-panel {
+                    margin-bottom: 50px;
+                }
+                .social-panel .title-cont {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 15px 35px;
+                    width: 100%;
+                    max-width: 915px;
+                    margin: 0 auto;
+                }
+                .social-panel .title-cont span {
+                    display: inline-block;
+                }
+                .social-panel .title {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .social-panel .title h2 {
+                    margin: 0 0 20px;
+                }
+                .social-panel .title .title1 {
+                    font-family: 'Covered By Your Grace', cursive;
+                    color: #db6027;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-transform: none;
+                }
+                .social-panel .title .title2,
+                .social-panel .title .title3 {
+                    font-size: 44px;
+                    line-height: 36px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    color: #15808f;
+                }
+                .social-panel .title-cont .desc {
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 500px;
+                }
+                @media (min-width: 641px) {
+                    .social-panel .title-cont {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                    }
+                    .social-panel .title {
+                        margin: 0 15px 0 0;
+                    }
+                }
+                @media (min-width: 1025px) {
+                    .social-panel {
+                        margin-bottom: 135px;
+                    }
+                    .social-panel .title .title1 {
+                        font-size: 56px;
+                        line-height: 48px;
+                    }
+                    .social-panel .title .title2, 
+                    .social-panel .title .title3 {
+                        font-size: 58px;
+                        line-height: 46px;
+                    }
+                }
+            </style>
+            <div class="title-cont">
+                <h2 class="title">
+                    <span class="title1">start</span>
+                    <span class="title2">your</span>
+                    <span class="title3">journey</span>
+                </h2>
+                <p class="desc">
+                    Sharing your Montrose exploits and escapades with family and friends? Share them with us, too!
+                </p>
+            </div>
+            <div class="inner-panel">
+                <img src="includes/public/assets/images/stackla-sm.png" class="show-for-small-only" style="display:block;width:100%" alt="">
+                <img src="includes/public/assets/images/stackla-lg.png" class="hide-for-small-only" style="display:block;width:100%" alt="">
+            </div>
+        </div><!-- social panel -->
+        <div class="carousel">
+            <div class="title-cont">
+                <h2 class="title">
+                    <span class="title1">create</span>
+                    <span class="title2">unique</span>
+                    <span class="title3">memories</span>
+                </h2>
+                <p class="desc">
+                    Whether you are just passing through town or planning to stay for a few days, Montrose offers a hearty selection of lodging and dining options that will suit every taste and budget.
+                </p>
+            </div>
+            <div class="slider">
+                <div class="arrow-cont"></div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    var root = $(".carousel");
+                    var slider = root.find(".slider");
+                    var arrows = root.find(".arrow-cont");
+                    slider.slick({
+                        infinite: true,
+                        arrows: true,
+                        dots: false,
+                        autoplay: false,
+                        prevArrow: '<div class="custom-arrow prev"><div type="button" data-role="none" class="slick-prev" aria-label="previous"><i class="fas fa-angle-left"></i></div></div>',
+                        nextArrow: '<div class="custom-arrow next"><div type="button" data-role="none" class="slick-next" aria-label="next"><i class="fas fa-angle-right"></i></div></div>',
+                        appendArrows: arrows,
+                        variableWidth: true,
+                        centerMode: true,
+                        slidesToShow: 5,
+                        slide: ".item"
+                    });
+                    $(window).on('resize orientationchange', function() {
+                        slider.slick('resize');
+                    });
+                });
+            </script> 
+        </div><!-- carousel -->
+    </section>
+
+    <!-- /////  FOOTER INCLUDE  ////// -->
+    <div w3-include-html="footer.html"></div>
+
+<!-- !!!!!!!!!!!! DO NOT USE THIS FILE FOR SHELL SETUP !!!!!!!!!!!! -->
+<script type="text/javascript" src="js/w3.js"></script>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<script type="text/javascript" src="js/nav.js"></script>
+
+<script type="text/javascript">
+
+    //Search specific 
+    $("body").on("click", "[data-toggle-search]", function(){
+        $("[data-sv-header-section]").toggleClass("search-active");
+    });
+    
+</script>
+
+</body>
+</html>

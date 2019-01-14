@@ -1,0 +1,23 @@
+.header-section .header-right .search-cont {
+    position: relative;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.header-section .header-right .search-cont i {
+    color: white;
+    width: 16px;
+    height: 16px;
+}
+
+.header-section .header-right .search-cont .close-search {
+    display: none;
+}
+
+.header-section.search-active .header-right .search-cont .open-search {
+    display: none;
+}
+
+.header-section.search-active .header-right .search-cont .close-search {
+    display: inline-block;
+}
