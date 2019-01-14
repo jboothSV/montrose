@@ -21,6 +21,11 @@
     pointer-events: all;
 }
 
+.header-section.fixed.search-active .header-right .search-cont .shared-form {
+    opacity: 1;
+    pointer-events: all;
+}
+
 /* Shared Input */
 .shared-input,
 .shared-input[type] {

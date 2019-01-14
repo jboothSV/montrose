@@ -17,3 +17,16 @@
             $(this).closest(".has-submenu").toggleClass("active");
         }
     });
+
+// Sticky header
+
+    var st;
+    $(window).on("scroll", function(e){
+        this.st = this.scrollY || document.documentElement.scrollTop;
+        if(this.st > 120){
+            $("[data-sv-header-section-fixed]").addClass("active");
+        }
+        if(this.st <= 120){
+            $("[data-sv-header-section-fixed]").removeClass("active");
+        }
+    });

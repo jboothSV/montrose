@@ -109,8 +109,8 @@
         </div><!-- intro panel -->
         <div class="showcase">
             <div class="torn"></div>
-            <div class="arrow-cont"></div>
             <div class="slider">
+                <div class="arrow-cont"></div>
                 <div class="item">
                     <div class="title">
                         <h2>Curecanti National Recreation Area</h2>
@@ -119,6 +119,9 @@
                         <img src="includes/public/assets/images/showcase.png" alt="">
                     </div>
                     <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>Curecanti National Recreation Area</h2>
+                        </div>
                         <p>
                             Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
                         </p>
@@ -130,9 +133,46 @@
                         <h2>Slide Number Two</h2>
                     </div>
                     <div class="img-cont">
+                        <img src="includes/public/assets/images/showcase2.png" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>SLide number tow</h2>
+                        </div>
+                        <p>
+                            Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
+                        </p>
+                        <a href="/" class="link">learn more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h2>Slide Number Three</h2>
+                    </div>
+                    <div class="img-cont">
+                        <img src="includes/public/assets/images/showcase3.png" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>Slide Number Three</h2>
+                        </div>
+                        <p>
+                            Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
+                        </p>
+                        <a href="/" class="link">learn more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h2>Slide Number Four</h2>
+                    </div>
+                    <div class="img-cont">
                         <img src="includes/public/assets/images/showcase.png" alt="">
                     </div>
                     <div class="slide-content">
+                        <div class="desktop-title">
+                            <h2>Slide Number Four</h2>
+                        </div>
                         <p>
                             Located an hour east of Montrose, the Curecanti National Recreation Area is home to Blue Mesa, Morrow Point and Crystal Reservoirs , named after the corresponding dams on the Gunnison River.
                         </p>
@@ -145,21 +185,36 @@
                 $(document).ready(function(){
                     var root = $(".showcase");
                     var slider = root.find(".slider");
-                    var arrowCont = root.find(".arrow-cont");
+                    var arrows = root.find(".arrow-cont");
 
                     slider.slick({
                         infinite: true,
                         arrows: true,
                         dots: false,
                         autoplay: false,
-                        fade: true,
-                        prevArrow: '<div class="custom-arrow prev"><div type="button" data-role="none" class="slick-prev" aria-label="previous"><i class="fas fa-angle-left"></i></div></div>',
-                        nextArrow: '<div class="custom-arrow next"><div type="button" data-role="none" class="slick-next" aria-label="next"><i class="fas fa-angle-right"></i></div></div>'
+                        fade: false,
+                        prevArrow: '<div class="custom-arrow prev" type="button" data-role="none" aria-label="previous"><i class="fas fa-angle-left"></i></div>',
+                        nextArrow: '<div class="custom-arrow next" type="button" data-role="none" aria-label="next"><i class="fas fa-angle-right"></i></div>',
+                        appendArrows: arrows,
+                        slide: ".item",
+                        slidesToShow: 3,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 2
+                                }
+                            },
+                            {
+                                breakpoint: 640,
+                                settings: {
+                                    fade: true,
+                                    slidesToShow: 1 
+                                }
+                            }
+                        ]
                     });
-
-                    $(window).on('resize orientationchange', function() {
-                        $('.home-header').slick('resize');
-                    });
+                    
                 });
             </script>
         </div><!-- showcase -->
@@ -512,6 +567,10 @@
     //Search specific 
     $("body").on("click", "[data-toggle-search]", function(){
         $("[data-sv-header-section]").toggleClass("search-active");
+    });
+
+    $("body").on("click", "[data-toggle-search-fixed]", function(){
+        $("[data-sv-header-section-fixed]").toggleClass("search-active");
     });
     
 </script>

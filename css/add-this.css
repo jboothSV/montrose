@@ -1,31 +1,38 @@
-/* Add This */
-ul.add-this {
-    float: right;
-    list-style: none;
-    margin-bottom: 10px;
-    text-align: center;
-}
-ul.add-this li {
-    float: left;
-    margin-left: 5px;
-}
-ul.add-this li:first-child {
-    margin-left: 0;
-}
-ul.add-this a {
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    width: 30px;
-    background-color: #c74d28;
-    color: #fff;
+.add-this {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    padding: 8px 35px 20px;
+    z-index: 1;
 }
 
-/*** Mobile ***/ 
-@media only screen and (max-width: 40em) {
-    ul.add-this {
-        display: inline-block;
-      float: none;
-      margin: 10px auto;
+.add-this::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../includes/public/assets/images/blue-splash.png")center/100% 110% no-repeat;
+    z-index: -1;
+}
+
+.add-this a {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.add-this a i {
+    margin-left: 4px;
+}
+
+@media (min-width: 1025px) {
+    .add-this {
+        right: 8%;
+        padding: 15px 40px;
+        transform: translateY(-50%);
     }
 }

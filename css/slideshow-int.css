@@ -7,14 +7,99 @@
 .header-slideshow-int {
 	position:relative;
 	display: block;
-	width: 100%;
-}
-.header-slideshow-int .imgcont,
-.header-slideshow-int .imgcont img { 
-	width: 100%; 
-	height: 100%;
+    width: 100%;
+    padding-bottom: 15px;
 }
 
-@media only screen and (max-width: 40em) {}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {}
-@media only screen and (min-width: 64.063em) {}
+.header-slideshow-int::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: url("../includes/public/assets/images/rough-edge.png")center/cover repeat-x;
+}
+
+.header-slideshow-int .item .img-cont {
+    position: relative;
+}
+
+.header-slideshow-int .item .img-cont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+}
+
+.header-slideshow-int .item .img-cont::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+}
+
+.header-slideshow-int .item .img-cont img { 
+	width: 100%; 
+	display: block;
+}
+
+.header-slideshow-int .item .slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 640px;
+    padding: 15px 15px 55px;
+}
+
+.header-slideshow-int .item .slide-content h2 {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+    color: white;
+    text-transform: none;
+}
+
+.header-slideshow-int .item .slide-content .desc {
+    display: none;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .header-slideshow-int {
+        padding-bottom: 25px;
+    }
+    .header-slideshow-int::after {
+        background-size: contain;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-slideshow-int .item .slide-content {
+        left: 8%;
+        padding-bottom: 70px;
+    }
+    .header-slideshow-int .item .slide-content .desc {
+        display: block;
+    }
+    .header-slideshow-int .item .slide-content h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 7px;
+    }
+    .header-slideshow-int::after {
+        height: 50px;
+    }
+}
