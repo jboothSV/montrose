@@ -29,10 +29,27 @@
     margin-left: 4px;
 }
 
+.listings.shared-detail .add-this {
+    top: 0;
+    bottom: auto;
+    right: 0;
+    transform: translate(10px, -50%);
+    padding: 8px 24px;
+}
+
 @media (min-width: 1025px) {
     .add-this {
         right: 8%;
         padding: 15px 40px;
         transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 1420px) {
+    .listings.shared-detail .add-this {
+        right: -255px;
+        top: 55px;
+        padding: 15px 50px;
+        font-size: 17px;
     }
 }

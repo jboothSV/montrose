@@ -3,6 +3,10 @@
     align-items: center;
 }
 
+.social-icon {
+    font-weight: normal;
+}
+
 .social-icons.desktop {
     display: none;
 }
@@ -19,6 +23,21 @@
 }
 
 .social-icons.mobile .social-icon:last-child {
+    margin-right: 0;
+}
+
+.shared-detail .social-icons {
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+
+.shared-detail .social-icon {
+    color: #15808f;
+    font-size: 22px;
+    margin-right: 25px;
+}
+
+.shared-detail .social-icons .social-icon:last-child {
     margin-right: 0;
 }
 

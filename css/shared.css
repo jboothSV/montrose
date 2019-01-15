@@ -80,12 +80,22 @@ body {
     color: #333333;
     overflow-x: hidden;
 }
-.homepage-bg {
+.page-bg {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    padding-bottom: 66%;
+    filter: grayscale(100%);
+    z-index: -1;
+}
+.page-bg .mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 66%;
+    background: linear-gradient(to bottom, rgba(250, 248, 244, 1) 0%, rgba(250, 248, 244, 0.75) 30%);
 }
 a,
 a:link,
@@ -356,6 +366,7 @@ dl {
 .content {
     position: relative;
     width: 100%;
+    padding-bottom: 5px;
 }
 
 @media(min-width: 1025px) {
@@ -363,24 +374,123 @@ dl {
         padding-bottom: 230px;
         z-index: 1;
     }
-    .homepage-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../includes/public/assets/images/homepage-bg.png")bottom/100% no-repeat;
-        filter: grayscale(100%);
-        z-index: -1;
+}
+
+.controlled-width {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.controlled-width.narrow {
+    max-width: 1000px;
+}
+
+.row {
+	max-width: 1150px;
+    margin: 0 auto;
+    width: inherit;
+}
+
+.contentRender_name_plugins_core_textbox,
+.contentRender_name_plugins_nav_sitemap,
+.contentRender_name_plugins_search_results,
+.contentRender_name_plugins_events_submitevent,
+.contentRender_name_plugins_crm_formbuilder,
+.contentRender_name_plugins_common_button {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px 15px;
+}
+
+.panel-two-col .contentRender_name_plugins_core_textbox,
+.panel-two-col-even .contentRender_name_plugins_core_textbox {
+    padding: 0;
+}
+
+.panel-two-col,
+.panel-two-col-even {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.two-col-left {
+    width: 100%;
+    padding: 0 15px 25px;
+    position: relative;
+}
+
+.two-col-left::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: calc(100% - 50px);
+    height: 6px;
+    background-color: #dedddb;
+}
+
+.panel-two-col.no-divide .two-col-left::after,
+.panel-two-col-even.no-divide .two-col-left::after {
+    display: none;
+}
+
+.panel-two-col.no-divide .two-col-left,
+.panel-two-col-even.no-divide .two-col-left {
+    padding: 0 15px;
+}
+
+.two-col-right {
+    width: 100%;
+    padding: 35px 15px 0;
+    position: relative;
+}
+
+.panel-two-col.no-divide .two-col-right,
+.panel-two-col-even.no-divide .two-col-right {
+    padding: 0 15px;
+}
+
+@media (min-width: 641px) {
+    .panel-two-col,
+    .panel-two-col-even {
+        flex-direction: row;
     }
-    .homepage-bg::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, rgba(250, 248, 244,0.75) 0%, rgba(250, 248, 244, 1) 30%);
+    .two-col-left,
+    .two-col-right {
+        width: 50%;
+    }
+    .two-col-left {
+        padding-bottom: 0;
+    }
+    .two-col-right {
+        padding-top: 0;
+    }
+    .two-col-left::after {
+        bottom: auto;
+        left: auto;
+        top: 50%;
+        right: 0;
+        width: 6px;
+        height: calc(100% - 15px);
+        transform: translate(-100%, -50%);
+    }
+}
+
+@media (min-width: 1025px) {
+    .panel-two-col,
+    .panel-two-col-even {
+        padding-bottom: 100px;
+    }
+    .two-col-left {
+        padding-right: 40px;
+    }
+    .two-col-right {
+        padding-left: 40px;
     }
 }
 
@@ -389,25 +499,6 @@ dl {
     max-width: 1145px;
     margin: 0 auto;
     padding: 0 15px 15px;
-}
-
-.row {
-	max-width: 1145px;
-    margin: 0 auto;
-    
-    width: inherit;
-}
-
-.controlled-width {
-    width: 100%;
-    max-width: 1145px;
-    margin: 0 auto;
-}
-
-.panel-two-col-even {
-    position: relative;
-    display: block;
-    width: 100%;
 }
 
 .panel-two-col-even .contentRender_name_plugins_core_textbox {padding: 0;}

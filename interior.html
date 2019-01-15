@@ -64,6 +64,9 @@
 
     <!-- //////  BODY  //////// -->
     <section class="content">
+        <div class="page-bg" style="background: url('includes/public/assets/images/interior-page-bg.jpg')bottom/100% no-repeat;">
+            <div class="mask"></div>
+        </div>
         <ul class="interior-nav">
             <li>
                 <a href="/">Home</a>
@@ -127,6 +130,16 @@
                     var root = $(".feat-slider");
                     var slider = root.find(".slider");
                     var arrows = root.find(".arrow-cont");
+                    var count = root.find(".slide-count");
+                    var current = count.find(".current");
+                    var total = count.find(".total");
+
+                    slider.on("init", function(){
+                        var all = slider.find(".item").length;
+                        var first = slider.find(".slick-current").data("slick-index") + 1;
+                        current.text(first);
+                        total.text(all);
+                    });
 
                     slider.slick({
                         infinite: true,
@@ -157,6 +170,11 @@
                             }
                         ]
                     });
+
+                    slider.on("beforeChange", function(event, slick, currentSlide, nextSlide){
+                        var next = $(slick.$slides[nextSlide]).data("slick-index") + 1;
+                        current.text(next);
+                    });
                     
                 });
             </script>
@@ -164,7 +182,7 @@
         </div><!-- feat slider -->
         <div class="panel-two-col-even controlled-width">
             <div class="row">
-                <div class="left-col columns small-12 medium-6">
+                <div class="two-col-left columns small-12 medium-6">
                     <div class="contentRender_name_plugins_core_textbox">
                         <h6>explore</h6>
                         <p>
@@ -172,7 +190,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="right-col columns small-12 medium-6">
+                <div class="two-col-right columns small-12 medium-6">
                     <div class="contentRender_name_plugins_core_textbox">
                         <h6>family adventures</h6>
                         <p>
@@ -181,7 +199,154 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- panel two col -->
+        <div class="cards">
+            <div class="inner-panel">
+                <div class="card">
+                    <a href="/">
+                        <div class="img-cont">
+                            <div class="bg-color" style="background-color:#933d92;"></div>
+                            <img src="includes/public/assets/images/card.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <div class="title-cont">
+                                <h6>hiking</h6>
+                                <span>montrose riverside trail</span>
+                            </div>
+                            <img src="includes/public/assets/images/icon-hike.svg" alt="" class="icon">
+                            <p class="desc">
+                                All levels of hikers, from families and novice adventurers to hardcore backpackers and campers, can enjoy the thrill of discovering Colorado’s ‘hidden’ gems. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/">
+                        <div class="img-cont">
+                            <div class="bg-color" style="background-color:#3dc6f0;"></div>
+                            <img src="includes/public/assets/images/card.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <div class="title-cont">
+                                <h6>climbing</h6>
+                                <span>black canyon national park</span>
+                            </div>
+                            <img src="includes/public/assets/images/icon-climb.svg" alt="" class="icon">
+                            <p class="desc">
+                                All levels of hikers, from families and novice adventurers to hardcore backpackers and campers, can enjoy the thrill of discovering Colorado’s ‘hidden’ gems. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/">
+                        <div class="img-cont">
+                            <div class="bg-color" style="background-color:#d44f5b;"></div>
+                            <img src="includes/public/assets/images/card.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <div class="title-cont">
+                                <h6>skiing</h6>
+                                <span>telluride ski resort</span>
+                            </div>
+                            <img src="includes/public/assets/images/icon-ski.svg" alt="" class="icon">
+                            <p class="desc">
+                                All levels of hikers, from families and novice adventurers to hardcore backpackers and campers, can enjoy the thrill of discovering Colorado’s ‘hidden’ gems. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- cards -->
+        <div class="banner">
+            <div class="img-cont" style="background:url('includes/public/assets/images/banner.png')center/cover no-repeat;"></div>
+            <div class="slide-content">
+                <h4>fishing montrose</h4>
+                <p class="desc">
+                    One of Colorado’s premier angling destinations, the Gunnison River through the Gunnison Gorge National Conservation Area and Black Canyon National Park offer visitors a chance to see remote sections of prime fishing! 
+                </p>
+                <a style="background-color:#d44f5b;" href="/" class="shared-btn">read more <img src="includes/public/assets/images/btn-arrow.png" alt="arrow right"></a>
+            </div>
+        </div><!-- banner -->
+        <div class="panel-two-col-even controlled-width narrow no-divide"><!-- no divide removes gray bar -->
+            <div class="row">
+                <div class="two-col-left columns small-12 medium-6">
+                    <div class="imagebox">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/imagebox.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h5>pancakes</h5>
+                            <p class="desc">
+                                Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own, and eat pancakes.
+                            </p>
+                            <a href="/" class="read-more">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two-col-right columns small-12 medium-6">
+                    <div class="imagebox">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/imagebox.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h5>pancakes</h5>
+                            <p class="desc">
+                                Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own, and eat pancakes.
+                            </p>
+                            <a href="/" class="read-more">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- panel two col -->
+        <div class="spotlight-panel controlled-width">
+            <div class="title-cont">
+                <h2>spotlight on montrose</h2>
+            </div>
+            <div class="inner-panel">
+                <div class="spotlight">
+                    <a href="/">
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="spotlight">
+                    <a href="/">
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="spotlight">
+                    <a href="/">
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="spotlight">
+                    <a href="/">
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- spotlight panel -->
     </section>
     
     <!-- /////  FOOTER INCLUDE  ////// -->
