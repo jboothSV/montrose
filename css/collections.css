@@ -324,8 +324,9 @@
         width: 54%;
         order: 2;
         transition: transform 0.8s;
-        transform: translateX(0) scale(1);
+        transform: translateX(0) scale(0.6);
         opacity: 0;
+        text-align: right;
     }
     .showcase .item.slick-current .slide-content {
         opacity: 1;
@@ -1430,6 +1431,15 @@
     left: 0;
     width: 100%;
     height: 100%;
+    -webkit-mask: url("../includes/public/assets/images/full-width-mask.png") 0 0 / 100% 100% no-repeat;
+    mask: url("../includes/public/assets/images/full-width-mask.png") 0 0 / 100% 100% no-repeat;
+}
+
+@supports (mask: url()){
+    .banner::after,
+    .banner::before {
+        display: none;
+    }
 }
 
 .banner .img-cont::before {
@@ -1507,6 +1517,8 @@
 .imagebox .img-cont img {
     display: block;
     width: 100%;
+    -webkit-mask: url("../includes/public/assets/images/imagebox-mask.png") 0 0 / 100% 100% no-repeat;
+    mask: url("../includes/public/assets/images/imagebox-mask.png") 0 0 / 100% 100% no-repeat;
 }
 
 .imagebox .img-cont::after {
@@ -1517,6 +1529,12 @@
     width: 100%;
     height: 25px;
     background: url("../includes/public/assets/images/rough-edge.png")center/cover repeat-x;
+}
+
+@supports(mask: url()){
+    .imagebox .img-cont::after {
+        display: none;
+    }
 }
 
 .imagebox .slide-content {

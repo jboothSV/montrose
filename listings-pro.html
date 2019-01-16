@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Simpleville CVB Cutup</title>
@@ -7,11 +8,11 @@
     <link rel="icon" href="/includes/public/assets/images/favicon.ico" type="image/x-icon">
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/themes/smoothness/jquery-ui.css" rel="stylesheet">
     <link href="css/foundation.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css">
     <link href="css/shared.css" rel="stylesheet" type="text/css">
     <link href="css/search.css" rel="stylesheet" type="text/css">
-    <link href="css/slideshow.css" rel="stylesheet" type="text/css" />
+    <link href="css/slideshow-int.css" rel="stylesheet" type="text/css" />
     <link href="css/collections.css" rel="stylesheet" type="text/css" />
     <link href="css/nav-shared.css" rel="stylesheet" type="text/css" />
     <link href="css/social.css" rel="stylesheet" type="text/css" />
@@ -23,1037 +24,928 @@
     <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/foundation.min.js"></script>
-    <script type="text/javascript"  src="js/foundation.reveal.js"></script>
+    <script type="text/javascript" src="js/foundation.reveal.js"></script>
     <script type="text/javascript" src="js/foundation.equalizer.js"></script>
     <script type="text/javascript" src="js/jquery.onscreen.js"></script>
-
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
 
     <!-- CUSTOM FONTS CODE -->
-    <script src="https://use.typekit.net/aat5zve.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="https://use.typekit.net/awm4idr.css">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper"> 
+    <!-- ///// HEADER INCLUDE ///// -->
+    <div w3-include-html="header.html"></div>
 
-        <!-- ///// HEADER INCLUDE ///// -->
-        <div w3-include-html="header.html"></div>
-        
-        <!-- //////  BODY  //////// -->
-        <section class="body-section">        
-            <div class="maincont">
-                <div class="panel-one-col">
-                    <div class="interior-nav hide-for-medium-down" data-guid="interior-nav">
-                        <div class="row">
-                            <div class="large-12 columns">
-                                <div class="toggle">
-                                    <i class="fa fa-angle-list" aria-hidden="true"></i>
-                                    See More:
-                                    <b>Things To Do</b>
-                                </div>
-                                <ul class="menu" hidden>
-                                    <li>
-                                        <a href="#">Attractions & Activities</a>
-                                        <i class="fa fa-angle-down open-submenu" aria-hidden="true"></i>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Attractions & Activities Submenu</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Arts & Culture</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Arts & Culture Submenu</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Hiking</a>
-                                        <i class="fa fa-angle-down open-submenu open"></i>
-                                        <ul class="open">
-                                            <li>
-                                                <a href="#">Tucson Downtown</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Saguaro National Monument</a>
-                                                <i class="fa fa-angle-down open-submenu open"></i>
-                                                <ul class="open">
-                                                    <li>
-                                                        <a class="active" href="#">Saguaro National Monument Submenu</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">Mt. Lemmon</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Catalina</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">West Tucson</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Day Spas</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Historical Downtown Walking Tour</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Itineraries</a>
-                                        <i class="fa fa-angle-down open-submenu" aria-hidden="true"></i>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Itineraries Submenu</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Nightlife</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Parks, Reserves & Deserts</a>
-                                        <i class="fa fa-angle-down open-submenu" aria-hidden="true"></i>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Parks, Reserves & Deserts Submenu</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Pet Friendly</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Shopping</a>
-                                        <i class="fa fa-angle-down open-submenu" aria-hidden="true"></i>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Shopping Submenu</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sports & Outdoors</a>
-                                        <i class="fa fa-angle-down open-submenu" aria-hidden="true"></i>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Sports & Outdoors Submenu</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Weddings</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end interior nav -->
-                </div>                
-
-                <div class="panel-one-col controlled-width">
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <h1>Simpleville Hotels & Motels</h1>
-                        </div>
-                        <div class="large-12 columns">
-                            <p>Find your perfect Simpleville hotel using the listings on this page. With everything from full-service resorts to budget-friendly motels, you'll find the perfect room or suite for your Southern Arizona vacation in Sonoran Desert.</p>
-                            <p>Search for a full service beach resort complete with spa and swimming pools, or take a leisurely stroll through one of the many hiking trails. Simpleville offers pet-friendly hotels, as well as hotels within walking distance to shopping, dining, entertainment, and a number of southwestern attractions. Start planning your dream vacation today.</p>
-                        </div>
-                    </div>
+    <!-- ////// HEADER SLIDESHOW //////// -->
+    <section class="header-slideshow-int">
+        <div class="item">
+            <a href="/">
+                <div class="img-cont">
+                    <picture>
+                        <source srcset="includes/public/assets/images/int-header-sm.png" media="(max-width:640px)">
+                        <img src="includes/public/assets/images/int-header.png" alt="">
+                    </picture>
                 </div>
-
-                <div class="panel-one-col">
-                    
-                    <!-- Begin Listings -->
-                    <div class="shared-layout listings layout-grid listings-wrapper" data-sv-layout="listings" data-sv-layout-guid="{{guid}}" data-equalizer data-equalizer-mq="large-up" data-options="equalize_on_stack:true">
-                        <ul class="mobile-options" data-sv-mobile-options="">
-                            <li class="filter">
-                                <a class="tab-title" href="#" data-sv-mobile-options-display="">Filters</a>
-                                <div class="options-dropdown">
-                                    <div class="mobile-filters-wrapper">
-                                        <div class="filters" data-sv-filters="">
-                                            <div class="close" data-sv-close-filters=""></div>
-                                            <form>
-                                                <input name="catid" value="278" type="hidden">
-                                                <input name="skip" value="0" type="hidden">
-                                                <input name="alphaend" value="" type="hidden">
-                                                <input name="alphastart" value="" type="hidden">
-                                                <input name="sort" value="qualityScore" type="hidden">
-                                                <input name="subcatids" value="2068" type="hidden">
-
-                                                <div class="form-group">
-                                                    <input class="shared-input input-text" name="keyword" type="text" placeholder="Search...">
-                                                    <button class="shared-submit"><i class="fa fa-search"></i></button>
-                                                </div>
-
-                                                <span class="filter-by">Filter By:</span>
-                                                <div class="filter-label">
-                                                    <span>Counties</span>
-                                                </div>
-
-                                                <ul class="filter-items">
-                                                    <li>
-                                                        <input name="regionids" id="reg-1" class="shared-input input-checkbox" value="1" type="checkbox">
-                                                        <label for="reg-1">County 1<span>(1)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="regionids" id="reg-2" class="shared-input input-checkbox" value="2" type="checkbox">
-                                                        <label for="reg-2">County 2 <span>(12)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="regionids" id="reg-3" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                        <label for="reg-3">County 3 <span>(1)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="regionids" id="reg-4" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                        <label for="reg-4">County 4 <span>(1)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="regionids" id="reg-5" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                        <label for="reg-5">County 5 <span>(11)</span></label>
-                                                    </li>
-
-                                                    <button class="show-more" data-sv-filter-showmore="">See More<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                                                </ul>
-
-                                                <div class="filter-label">Listing Type</div>
-                                                <ul class="filter-items">
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-1" class="shared-input input-checkbox" value="1" type="checkbox">
-                                                        <label for="listingtype-1">Bed &amp; Breakfasts and Country Inns<span>(43)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-2" class="shared-input input-checkbox" value="2" type="checkbox">
-                                                        <label for="listingtype-2">Cabins &amp; Campgrounds<span>(29)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-3" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                        <label for="listingtype-3">Conference/Retreat Centers &amp; Unique Venues<span>(24)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-4" class="shared-input input-checkbox" value="4" type="checkbox">
-                                                        <label for="listingtype-4">Cottages &amp; Vacation Homes<span>(46)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-5" class="shared-input input-checkbox" value="1" type="checkbox">
-                                                        <label for="listingtype-5">Hostels<span>(1)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-6" class="shared-input input-checkbox" value="2" type="checkbox">
-                                                        <label for="listingtype-6">Hotels &amp; Motels<span>(12)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-7" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                        <label for="listingtype-7">Pet Lodging<span>(2)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="listingids" id="listingtype-8" class="shared-input input-checkbox" value="4" type="checkbox">
-                                                        <label for="listingtype-8">Resorts<span>(3)</span></label>
-                                                    </li>
-
-                                                    <button class="show-more" data-sv-filter-showmore="">See More<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-
-                                                </ul>
-
-                                                <div class="filter-label">Amenities</div>
-                                                <ul class="filter-items">
-
-                                                    <li>
-                                                        <input name="amenities" id="amen-1" class="shared-input input-checkbox" value="accommodations_atm" type="checkbox">
-                                                        <label for="amen-1">ATM Available<span>(13)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="amenities" id="amen-2" class="shared-input input-checkbox" value="accommodations_freecontinentalbreakfast" type="checkbox">
-                                                        <label for="amen-2">Breakfast Included<span>(17)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="amenities" id="amen-3" class="shared-input input-checkbox" value="accommodations_businesscenter" type="checkbox">
-                                                        <label for="amen-3">Business Center<span>(13)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="amenities" id="amen-4" class="shared-input input-checkbox" value="accommodations_kidfriendly" type="checkbox">
-                                                        <label for="amen-4">Children Welcome<span>(17)</span></label>
-                                                    </li>
-
-                                                    <li>
-                                                        <input name="amenities" id="amen-5" class="shared-input input-checkbox" value="accommodations_highspeedinternetinroom" type="checkbox">
-                                                        <label for="amen-5">Free Wifi<span>(19)</span></label>
-                                                    </li>
-
-                                                    <button class="show-more" data-sv-filter-showmore="">See More<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                                                </ul>
-                                                <a class="clear-filters" href="/" data-sv-clear-filters>clear filters</a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="view">
-                                <a href="#" data-sv-mobile-options-display="">View by<i class="fa fa-angle-down"></i></a>
-                                <div class="options-dropdown centered">
-                                    <ul class="options">
-                                        <li><a href="#" class="active" data-sv-viewby="grid"><i class="fa fa-th"></i> Grid</a></li>
-                                        <li><a href="#" data-sv-viewby="list"><i class="fa fa-list"></i> List</a></li>
-                                        <li><a href="#" data-sv-viewby="map"><i class="fa fa-map-marker"></i> Map</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="sort">
-                                <a href="#" data-sv-mobile-options-display="">Sort by<i class="fa fa-angle-down"></i></a>
-                                <div class="options-dropdown centered">
-                                    <ul class="options">
-                                        <li><a href="?sort=">Recommended</a></li>
-                                        <li><a href="?sort=qualityScore">Name</a></li>
-                                        <li><a href="?sort=">Near Me</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <script type="text/javascript">
-                            var closeMobileMenus = function() {
-                                $('[data-sv-mobile-options]').find('li.active').removeClass('active');
-                            };
-
-                            $('[data-sv-mobile-options-display]').on('click', function() {
-                                $(this).parent().closest('li').toggleClass('active');
-                                return false;
-                            });
-
-                            $('.mobile-options li.active').parent().off('click', function() {
-                                $(this).find('[data-sv-mobile-options-display]').toggleClass('active');
-                                return false;
-                            });
-
-                            $('[data-sv-close-filters]').on('click', function() {
-                                closeMobileMenus();
-                                return false;
-                            });
-
-                            $('[data-sv-filter-showmore]').on('click', function() {
-                                $('.filters ul.filter-items > li').css('display', 'block');
-                                $(this).toggleClass('active');
-                            });
-
-                            $('[data-sv-viewby]').on('click', function(){
-                                $(this).closest('ul').parent().closest('li').toggleClass('active');
-                            });
-
-                        </script>
-
-                        <div class="desktop-filters">
-                            <div class="filters-wrapper" data-equalizer-watch>
-                                <div class="filters" data-sv-filters="" data-equalizer-watch>
-                                    <div class="close" data-sv-close-filters=""></div>
-                                    <form>
-                                        <input name="catid" value="278" type="hidden">
-                                        <input name="skip" value="0" type="hidden">
-                                        <input name="alphaend" value="" type="hidden">
-                                        <input name="alphastart" value="" type="hidden">
-                                        <input name="sort" value="qualityScore" type="hidden">
-                                        <input name="subcatids" value="2068" type="hidden">
-
-                                        <div class="form-group">
-                                            <input class="shared-input input-text" name="keyword" type="text" placeholder="Search...">
-                                            <button class="shared-submit"><i class="fa fa-search"></i></button>
-                                        </div>
-
-                                        <span class="filter-by">Filter By:</span>
-                                        <div class="filter-label">
-                                            <span>Counties</span>
-                                        </div>
-
-                                        <ul class="filter-items">
-                                            <li>
-                                                <input name="regionids" id="reg-1" class="shared-input input-checkbox" value="1" type="checkbox">
-                                                <label for="reg-1">County 1<span>(1)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="regionids" id="reg-2" class="shared-input input-checkbox" value="2" type="checkbox">
-                                                <label for="reg-2">County 2 <span>(12)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="regionids" id="reg-3" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                <label for="reg-3">County 3 <span>(1)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="regionids" id="reg-4" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                <label for="reg-4">County 4 <span>(1)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="regionids" id="reg-5" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                <label for="reg-5">County 5 <span>(11)</span></label>
-                                            </li>
-
-                                            <button class="show-more" data-sv-filter-showmore="">See More<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-
-                                        </ul>
-
-                                        <div class="filter-label">Listing Type</div>
-                                        <ul class="filter-items">
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-1" class="shared-input input-checkbox" value="1" type="checkbox">
-                                                <label for="listingtype-1">Bed &amp; Breakfasts and Country Inns<span>(43)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-2" class="shared-input input-checkbox" value="2" type="checkbox">
-                                                <label for="listingtype-2">Cabins &amp; Campgrounds<span>(29)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-3" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                <label for="listingtype-3">Conference/Retreat Centers &amp; Unique Venues<span>(24)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-4" class="shared-input input-checkbox" value="4" type="checkbox">
-                                                <label for="listingtype-4">Cottages &amp; Vacation Homes<span>(46)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-5" class="shared-input input-checkbox" value="1" type="checkbox">
-                                                <label for="listingtype-5">Hostels<span>(1)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-6" class="shared-input input-checkbox" value="2" type="checkbox">
-                                                <label for="listingtype-6">Hotels &amp; Motels<span>(12)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-7" class="shared-input input-checkbox" value="3" type="checkbox">
-                                                <label for="listingtype-7">Pet Lodging<span>(2)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="listingids" id="listingtype-8" class="shared-input input-checkbox" value="4" type="checkbox">
-                                                <label for="listingtype-8">Resorts<span>(3)</span></label>
-                                            </li>
-
-                                            <button class="show-more" data-sv-filter-showmore="">See More<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-
-                                        </ul>
-
-                                        <div class="filter-label">Amenities</div>
-                                        <ul class="filter-items">
-
-                                            <li>
-                                                <input name="amenities" id="amen-1" class="shared-input input-checkbox" value="accommodations_atm" type="checkbox">
-                                                <label for="amen-1">ATM Available<span>(13)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="amenities" id="amen-2" class="shared-input input-checkbox" value="accommodations_freecontinentalbreakfast" type="checkbox">
-                                                <label for="amen-2">Breakfast Included<span>(17)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="amenities" id="amen-3" class="shared-input input-checkbox" value="accommodations_businesscenter" type="checkbox">
-                                                <label for="amen-3">Business Center<span>(13)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="amenities" id="amen-4" class="shared-input input-checkbox" value="accommodations_kidfriendly" type="checkbox">
-                                                <label for="amen-4">Children Welcome<span>(17)</span></label>
-                                            </li>
-
-                                            <li>
-                                                <input name="amenities" id="amen-5" class="shared-input input-checkbox" value="accommodations_highspeedinternetinroom" type="checkbox">
-                                                <label for="amen-5">Free Wifi<span>(19)</span></label>
-                                            </li>
-
-                                            <button class="show-more" data-sv-filter-showmore="">See More<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                                        </ul>
-                                        <a class="clear-filters" href="/" data-sv-clear-filters>clear filters</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="results-wrapper" data-equalizer-watch>
-                            <div class="results">
-                                <ul class="options">
-                                    <div class="controlled-width-listing">
-                                        <div>
-                                            <li class="sort-title">View by:</li>
-                                            <li><a class="view-option active" href="#" data-sv-viewby="grid"><i class="fa fa-th"></i> Grid</a></li>
-                                            <li><a class="view-option" href="#" data-sv-viewby="list"><i class="fa fa-list"></i> List</a></li>
-                                            <li><a class="view-option" href="#" data-sv-viewby="map"><i class="fa fa-map-marker"></i> Map</a></li>
-                                        </div>
-                                        <div>
-                                            <li class="sort-title">Sort by:</li>
-                                            <li><a class="active" href="?sort=">Recommended</a></li>
-                                            <li><a href="?sort=qualityScore">Name</a></li>
-                                            <li><a href="?sort=">Near Me</a></li>
-                                        </div>
-                                        <div>
-                                            <li class="sort-title">Display:</li>
-                                            <li><a class="active" href="?sort=">9</a></li>
-                                            <li><a href="?sort=qualityScore">18</a></li>
-                                            <li><a href="?sort=">All</a></li>
-                                        </div>
-                                    </div>
-                                </ul>
-                                <div class="shared-map-container" data-sv-map-container="">
-                                    <div class="map-list-cont">
-                                        <div class="map-list-heading">
-                                            <h3>Results</h3>
-                                        </div>
-                                        <div class="map-list">
-                                            <ul class="shared-items">
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list1-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list2-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list3-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list4-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list5-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list6-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list1-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list2-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list3-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="map-list-pager listings-bottom">
-                                            <ul class="pagination">
-                                                <li><a data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore"><i class="fa fa-angle-double-left"></i><span class="pagination-prev"><i class="fa fa-angle-left"></i></span></a></li>
-                                                <li>1-9 of 43</li>
-                                                <li><a class="" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore"><span class="pagination-next"><i class="fa fa-angle-right"></i></span><i class="fa fa-angle-double-right"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="map" class="shared-map">
-                                        <div class="gMapContainer" data-gmapcontainer="">
-                                            <div class="gMapHolder" data-mapholder="">
-                                                <img src="includes/public/assets/images/listings/detail-map.png" style="width: 100%; height: 100%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="shared-items-container" data-sv-items="">
-
-                                    <div class="shared-items">
-                                        <div class="controlled-width-listing">
-                                            <ul data-sv-items-wrapper="" data-equalizer="">
-                                                <li>
-                                                    <div class="shared-item item featured" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <div class="feat-listing">
-                                                                <span>featured</span>
-                                                            </div>
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list1-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item featured" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <div class="feat-listing">
-                                                                <span>featured</span>
-                                                            </div>
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list2-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item featured" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <div class="feat-listing">
-                                                                <span>featured</span>
-                                                            </div>
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list3-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list4-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list5-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list6-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list1-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list2-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="shared-item item" data-equalizer-watch="">
-                                                        <div class="image-container">
-                                                            <a href="/">
-                                                                <img class="thumb" src="includes/public/assets/images/listings/list3-img.jpg">
-                                                            </a>
-                                                        </div>
-                                                        <div class="contents">
-                                                            <h2><a href="/">Country Seasons Bed &amp; Breakfast Inn</a></h2>
-                                                            <p class="address"><i class="fa fa-map-marker"></i>100 Stewarton Rd. Mill Run, PA 15464</p>
-                                                            <div class="listing-btns">
-                                                                <a href="/">see details</a>
-                                                                <a href="/">visit website</a>
-                                                                <a class="book-now" href="/">book now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                            </div>
-                            <div class="listings-bottom">
-                                <div class="controlled-width-listing">
-                                    <div class="row">
-                                        <div class="small-12 medium-6 large-6 columns">
-                                            <div class="back-btn-cont">
-                                                <a class="back-to-btn" href="#top">Back to top<i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="small-12 medium-6 large-6 columns">
-                                            <div class="pagination-container">
-                                                <ul class="pagination">
-                                                    <li><a data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore"><i class="fa fa-angle-double-left"></i><span class="pagination-prev"><i class="fa fa-angle-left"></i></span></a></li>
-                                                    <li>1-9 of 43</li>
-                                                    <li><a class="" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore"><span class="pagination-next"><i class="fa fa-angle-right"></i></span><i class="fa fa-angle-double-right"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-
-                        <div class="overlay" data-sv-listings-overlay=""></div>
-                        <!-- Listings Specific -->
-                        <script type="text/javascript">
-                            // specific display settings for list view
-                            var root = $('[data-sv-layout-guid="{{guid}}"]');
-
-                            root.find('a[data-sv-viewby]').click(function(e) {
-                                e.preventDefault();
-                                var viewby = $(this).attr('data-sv-viewby');
-                                var layout = $('[data-sv-layout]');
-
-                                $('a[data-sv-viewby].active').removeClass('active');
-                                $('a[data-sv-viewby="' + viewby + '"]').toggleClass('active');
-
-                                layout.removeClass('layout-grid')
-                                    .removeClass('layout-list')
-                                    .removeClass('layout-map');
-
-                                layout.addClass('layout-' + viewby);
-
-                                // specific display settings for list view
-                                if (viewby === 'list') {
-                                    $('[data-sv-items-wrapper]')
-                                        .removeClass('grid-view map-vew')
-                                        .addClass('list-view');
-
-                                    $(document).foundation({
-                                        equalizer: {
-                                            equalize_on_stack: false
-                                        }
-                                    });
-                                }
-
-                                // specific display settings for grid view
-                                if (viewby === 'grid') {
-                                    $('[data-sv-items-wrapper]')
-                                        .removeClass('list-view map-view')
-                                        .addClass('grid-view');
-
-                                    $(document).foundation({
-                                        equalizer: {
-                                            equalize_on_stack: true
-                                        }
-                                    });
-                                }
-
-                            });
-
-                            if (root.hasClass('layout-list')) {
-                                $('[data-sv-items-wrapper]')
-                                    .removeClass('grid-view map-view')
-                                    .addClass('list-view');
-
-                                root.foundation('equalizer', 'reflow');
-                            }
-
-                            // specific display settings for grid view
-                            if (root.hasClass('layout-grid')) {
-                                $('[data-sv-items-wrapper]')
-                                    .removeClass('list-view map-view')
-                                    .addClass('grid-view');
-
-                                $(document).foundation({
-                                    equalizer: {
-                                        equalize_on_stack: true
-                                    }
-                                });
-                            }
-                        </script>
-                    </div>
-                </div>
-                <!-- End Listings -->
+            </a>
+            <div class="slide-content">
+                <h2>Stay Here. Play Everywhere</h2>
+                <p class="desc">
+                    Lodging here is a great way to keep yourself within striking distance of numerous activities and
+                    attractions that will fill your visit with great experiences. <a href="/">learn more</a>
+                </p>
             </div>
-        </section><!--body-section-->
-            
-        <!-- /////  FOOTER INCLUDE  ////// -->
+        </div>
+        <div class="add-this">
+            <a href="/">Share<i class="fas fa-share"></i></a>
+        </div>
+    </section>
+
+    <!-- //////  BODY  //////// -->
+    <section class="content">
+        <div class="page-bg" style="background: url('includes/public/assets/images/interior-page-bg.jpg')bottom/100% no-repeat;">
+            <div class="mask"></div>
+        </div>
+        <ul class="interior-nav">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/">Hotels</a>
+            </li>
+        </ul>
+        <div class="intro-panel">
+            <div class="contentRender_name_plugins_core_textbox">
+                <h1>stay with us</h1>
+                <p>
+                    Montrose offers variety in lodging choices as well, from a quaint bread and breakfast to vacation
+                    rentals. Peruse the menu and make a choice that appeals to your palate – and budget.
+                </p>
+            </div>
+        </div><!-- intro panel -->
+        <div class="booking">
+            <div class="inner">
+                <form action="/" method="GET" class="booking-form">
+                    <div class="option-cont">
+                        <input type="date">
+                        <div class="placeholder">
+                            Check-In
+                        </div>
+                        <div class="toggle">
+                            <i class="far fa-calendar-check"></i>
+                        </div>
+                    </div>
+                    <div class="option-cont">
+                        <input type="date">
+                        <div class="placeholder">
+                            Check-Out
+                        </div>
+                        <div class="toggle">
+                            <i class="far fa-calendar-check"></i>
+                        </div>
+                    </div>
+                    <div class="option-cont">
+                        <select name="booking" id="booking-select">
+                            <option value="All Lodging" selected>All Lodging</option>
+                            <option value="Value Two">Value Two</option>
+                            <option value="Value Three">Value Three</option>
+                        </select>
+                        <div class="placeholder">
+                            All Lodging
+                        </div>
+                        <div class="toggle">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <button class="submit" type="button">Check Rates</button>
+                </form>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    var select = $("#booking-select");
+                    var text = select.parent().find(".placeholder");
+                    
+                    select.on("click", function(){
+                        $(this).parent().toggleClass("active");
+                        if(!$(this).hasClass("active")){
+                            text.text($("#booking-select option:selected").val());
+                        }
+                    });
+                    
+                });
+            </script>
+        </div>
+        <!-- Begin Listings -->
+        <div class="shared-list shared-layout listings layout-grid listings-wrapper" id="listings_{{guid}}" data-gtm-vars='{ "tCore" : { "category" : "listing_layout_list" }, "tClient" : { "eventCategory" : "Listings" } }' data-sv-layout>
+
+            <div class="listings-page-bg" style="background: url('includes/public/assets/images/listings/default-header.png')left bottom/cover no-repeat;">
+                <div class="mask"></div>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                    var list = $(".shared-list.listings");
+                    var header = $(".header-slideshow-int");
+                    var bg = list.find(".listings-page-bg");
+                    var dist;
+                    if(!header){
+                        dist = list.offset().top;
+                    }else{
+                        dist = list.offset().top - header.height();
+                    }
+                    bg.css("height", dist);
+                });
+            </script>
+
+            <ul class="options">
+                <li><a class="view-option active" href="#" data-sv-viewby="grid"><i class="fa fa-th"></i> Grid</a></li>
+                <li><a class="view-option" href="#" data-sv-viewby="list"><i class="fa fa-list"></i> List</a></li>
+                <li><a class="view-option" href="#" data-sv-viewby="map"><i class="fa fa-map-marker"></i> Map</a></li>
+                <li class="sort-title" data-sv-distanceSort>Sort By:</li>
+                <li data-sv-distanceSort><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "qualityScore" } }' data-query-link='{ "delta" : { "sort" : "qualityScore", "skip" : "", "dtnids" :"" }, "selectedIgnore" : ["skip", "dtnids"] }'>Recommended</a><span class="distanceSort"> | </span></li>
+                <li class="distanceSort"><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "distance" } }' data-query-link='{ "delta" : { "sort" : "distance", "skip" : "", "dtnids" : "" }, "selectedIgnore" : ["skip", "dtnids"] }'>Distance</a></li>
+                <li class="pagination" data-sv-desktop-pager>
+                <div class="pagination-container top-container">
+                    <div data-sv-pager></div>
+                    </div>
+                </li>
+            </ul><!-- options -->
+        
+            <ul class="mobile-options" data-sv-mobile-options="">
+                <li>
+                    <a class="tab-title" href="#" data-sv-mobile-options-display="">Filters</a>
+                    <div class="options-dropdown">
+                        <div class="mobile-filters-wrapper">
+                            <div class="filters" data-sv-filters="">
+                                <div class="close" data-sv-close-filters=""></div>
+                                <form>
+                                    <input type="hidden" name="catid" value="{{data.listingcats}}"/>
+                                    <input type="hidden" name="skip" value="0"/>
+                                    <input type="hidden" name="alphaend" value=""/>
+                                    <input type="hidden" name="alphastart" value=""/>
+                                    <input type="hidden" name="sort" value=""/>
+                                    <input type="hidden" name="subcatids" value="{{~var.validSubcats.0.value}}" />
+                            
+                                    <div class="form-group">
+                                        <input class="shared-input input-text" name="keyword" type="text" placeholder="Search">
+                                        <button class="shared-submit"><i class="fas fa-search"></i></button>
+                                    </div>
+
+                                    <div class="calendar-filter" style="opacity: 1; height: auto;">
+                                        <div class="calendar-label">
+                                            <span>Show Events For</span>
+                                        </div>
+                                        <ul class="timeWindow">
+                                            <li>
+                                                <a data-query-link="{ &quot;delta&quot; : { &quot;startDate&quot; : &quot;03/13/2018&quot;, &quot;endDate&quot; : &quot;03/13/2018&quot;, &quot;skip&quot; : 0 } }" data-sv-timewindow="" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;events_custom_event_list_filter_filter_relative_dates&quot;, &quot;label&quot; : &quot;Today&quot; } }" href="?skip=0&amp;startDate=03%2F13%2F2018&amp;endDate=03%2F13%2F2018&amp;sort=date">Today</a>
+                                            </li>
+                                            <li>
+                                                <a class="active" data-query-link="{ &quot;delta&quot; : { &quot;startDate&quot; : &quot;03/14/2018&quot;, &quot;endDate&quot; : &quot;03/14/2018&quot;, &quot;skip&quot; : 0 } }" data-sv-timewindow="" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;events_custom_event_list_filter_filter_relative_dates&quot;, &quot;label&quot; : &quot;Tomorrow&quot; } }" href="?skip=0&amp;startDate=03%2F14%2F2018&amp;endDate=03%2F14%2F2018&amp;sort=date">This Week</a>
+                                            </li>
+                                            <li>
+                                                <a data-query-link="{ &quot;delta&quot; : { &quot;startDate&quot; : &quot;03/13/2018&quot;, &quot;endDate&quot; : &quot;03/19/2018&quot;, &quot;skip&quot; : 0 } }" data-sv-timewindow="" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;events_custom_event_list_filter_filter_relative_dates&quot;, &quot;label&quot; : &quot;This Week&quot; } }" href="?skip=0&amp;startDate=03%2F13%2F2018&amp;endDate=03%2F19%2F2018&amp;sort=date" class="selected">This Month</a>
+                                            </li>
+                                        </ul>
+                                        <div class="calendar-label">
+                                            <span>Show Events Between</span>
+                                        </div>
+                                        <div class="daterange-input-wrapper">
+                                            <input type="text" class="txt_daterange_calendar input-text" placeholder="DD/MM/YYYY">
+                                            <span>and</span>
+                                            <input type="text" class="txt_daterange_calendar input-text" placeholder="DD/MM/YYYY">
+                                        </div>
+                                        <div class="daterange-calendar daterange_calendar">
+                                            <div class="date-picker-wrapper no-shortcuts  no-topbar  inline-wrapper no-gap single-month" unselectable="on" style="user-select: none;">
+                                                <div class="month-wrapper">
+                                                    <table class="month1" cellspacing="0" border="0" cellpadding="0">
+                                                        <thead>
+                                                            <tr class="caption"><th class="calendar-control" colspan="2"><span class="prev"><i class="fa fa-caret-left calendar-prev"></i></span></th><th colspan="3" class="month-name">April</th><th class="calendar-control" colspan="2"><span class="next"><i class="fa fa-caret-right calendar-next"></i></span></th></tr>
+                                                            <tr class="week-name">
+                                                                <th>Su</th>
+                                                                <th>M</th>
+                                                                <th>T</th>
+                                                                <th>W</th>
+                                                                <th>Th</th>
+                                                                <th>F</th>
+                                                                <th>Sa</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><div time="1519542000000" class="day lastMonth  invalid"></div></td>
+                                                                <td><div time="1519628400000" class="day lastMonth  invalid"></div></td>
+                                                                <td><div time="1519714800000" class="day lastMonth  invalid"></div></td>
+                                                                <td><div time="1519801200000" class="day lastMonth  invalid"></div></td>
+                                                                <td><div time="1519887600000" class="day toMonth  invalid">1</div></td>
+                                                                <td><div time="1519974000000" class="day toMonth  invalid">2</div></td>
+                                                                <td><div time="1520060400000" class="day toMonth  invalid">3</div></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div time="1520146800000" class="day toMonth  valid">4</div></td>
+                                                                <td><div time="1520233200000" class="day toMonth  valid">5</div></td>
+                                                                <td><div time="1520319600000" class="day toMonth  valid">6</div></td>
+                                                                <td><div time="1520406000000" class="day toMonth  invalid">7</div></td>
+                                                                <td><div time="1520492400000" class="day toMonth  invalid">8</div></td>
+                                                                <td><div time="1520578800000" class="day toMonth  invalid">9</div></td>
+                                                                <td><div time="1520665200000" class="day toMonth  invalid">10</div></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div time="1520751600000" class="day toMonth  invalid">11</div></td>
+                                                                <td><div time="1520838000000" class="day toMonth  invalid">12</div></td>
+                                                                <td><div time="1520924400000" class="day toMonth  invalid real-today checked first-date-selected">13</div></td>
+                                                                <td><div time="1521010800000" class="day toMonth  invalid  checked">14</div></td>
+                                                                <td><div time="1521097200000" class="day toMonth  invalid  checked">15</div></td>
+                                                                <td><div time="1521183600000" class="day toMonth  invalid  checked">16</div></td>
+                                                                <td><div time="1521270000000" class="day toMonth  invalid  checked">17</div></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div time="1521356400000" class="day toMonth  invalid  checked">18</div></td>
+                                                                <td><div time="1521442800000" class="day toMonth  invalid  checked last-date-selected">19</div></td>
+                                                                <td><div time="1521529200000">20</div></td>
+                                                                <td><div time="1521615600000">21</div></td>
+                                                                <td><div time="1521702000000">22</div></td>
+                                                                <td><div time="1521788400000">23</div></td>
+                                                                <td><div time="1521874800000">24</div></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div time="1521961200000">25</div></td>
+                                                                <td><div time="1522047600000">26</div></td>
+                                                                <td><div time="1522134000000">27</div></td>
+                                                                <td><div time="1522220400000">28</div></td>
+                                                                <td><div time="1522306800000">29</div></td>
+                                                                <td><div time="1522393200000">30</div></td>
+                                                                <td><div time="1522479600000">31</div></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div style="clear:both;height:0;font-size:0;"></div>
+                                                    <div class="time"><div class="time1"></div><div class="time2"></div></div>
+                                                    <div style="clear:both;height:0;font-size:0;"></div>
+                                                </div>
+                                                <div class="footer"></div>
+                                                <div class="date-range-length-tip" style="display: none;"></div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Calendar -->
+                            
+                                    <h4>Categories</h4>
+                                    <ul class="filter-items">
+                                        <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Airport District</label></li>
+                                        <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Diamond District</label></li>
+                                        <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Downtown</label></li>
+                                        <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Jack London Square</label></li>
+                                        <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">District 9</label></li>
+                                        <li class="showmore" data-sv-filter-showmore data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_showmore" } }'>View More</li>
+                                        
+                                    </ul>
+                                    
+                                    <a href="#" class="clear-filters" data-sv-clear-filters="">Clear Filters</a>
+                                
+                                </form>
+                            </div><!-- filters -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-sv-mobile-options-display="">View <i class="fa fa-caret-down"></i></a>
+                    <div class="options-dropdown">
+                        <ul class="options">
+                            <li><a href="#" class="active" data-sv-viewby="grid"><i class="fa fa-th"></i> Grid</a></li>
+                            <li><a href="#" data-sv-viewby="list"><i class="fa fa-list"></i> List</a></li>
+                            <li><a href="#" data-sv-viewby="map"><i class="fa fa-map-marker"></i> Map</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li data-sv-distanceSort>
+                    <a href="#" data-sv-mobile-options-display="">Sort <i class="fa fa-caret-down"></i></a>
+                    <div class="options-dropdown">
+                        <ul class="options">
+                            <li class="title">Sort By:</li>
+                                <li><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "qualityScore" } }' data-query-link='{ "delta" : { "sort" : "qualityScore", "skip" : "", "dtnids" :"" }, "selectedIgnore" : ["skip", "dtnids"] }'>Recommended</a></li>
+                            <li class="distanceSort"><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "distance" } }' data-query-link='{ "delta" : { "sort" : "distance", "skip" : "", "dtnids" : "" }, "selectedIgnore" : ["skip", "dtnids"] }'>Distance</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul><!-- mobile options -->
+
+            <script type="text/javascript">
+                var closeMobileMenus = function () {
+                    $('[data-sv-mobile-options]').find('li.active').removeClass('active');
+                };
+
+                $('[data-sv-mobile-options-display]').on('click', function () {
+                    $(this).closest('li').toggleClass('active');
+                    return false;
+                });
+
+                $('.mobile-options li.active').parent().off('click', function () {
+                    $(this).find('[data-sv-mobile-options-display]').toggleClass('active');
+                    return false;
+                });
+
+                $('[data-sv-close-filters]').on('click', function () {
+                    closeMobileMenus();
+                    return false;
+                });
+
+                $('[data-sv-filter-showmore]').on('click', function () {
+                    $('.filters ul.filter-items > li').css('display', 'block');
+                    $(this).toggleClass('active');
+                });
+
+                $('[data-sv-viewby]').on('click', function () {
+                    $(this).closest('ul').parent().closest('li').toggleClass('active');
+                });
+
+            </script>
+        
+            <div class="desktop-filters">
+                <div class="filters-wrapper">
+                    <div class="filters" data-sv-filters="">
+                        <div class="close" data-sv-close-filters=""></div>
+                        <form>
+                            <input type="hidden" name="catid" value="{{data.listingcats}}"/>
+                            <input type="hidden" name="skip" value="0"/>
+                            <input type="hidden" name="alphaend" value=""/>
+                            <input type="hidden" name="alphastart" value=""/>
+                            <input type="hidden" name="sort" value=""/>
+                            <input type="hidden" name="subcatids" value="{{~var.validSubcats.0.value}}" />
+                    
+                            <div class="form-group">
+                                <input class="shared-input input-text" name="keyword" type="text" placeholder="Search">
+                                <button class="shared-submit"><i class="fas fa-search"></i></button>
+                            </div>
+
+                            <div class="calendar-filter" style="opacity: 1; height: auto;">
+                                <div class="calendar-label">
+                                    <span>Show Events For</span>
+                                </div>
+                                <ul class="timeWindow">
+                                    <li>
+                                        <a data-query-link="{ &quot;delta&quot; : { &quot;startDate&quot; : &quot;03/13/2018&quot;, &quot;endDate&quot; : &quot;03/13/2018&quot;, &quot;skip&quot; : 0 } }" data-sv-timewindow="" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;events_custom_event_list_filter_filter_relative_dates&quot;, &quot;label&quot; : &quot;Today&quot; } }" href="?skip=0&amp;startDate=03%2F13%2F2018&amp;endDate=03%2F13%2F2018&amp;sort=date">Today</a>
+                                    </li>
+                                    <li>
+                                        <a class="active" data-query-link="{ &quot;delta&quot; : { &quot;startDate&quot; : &quot;03/14/2018&quot;, &quot;endDate&quot; : &quot;03/14/2018&quot;, &quot;skip&quot; : 0 } }" data-sv-timewindow="" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;events_custom_event_list_filter_filter_relative_dates&quot;, &quot;label&quot; : &quot;Tomorrow&quot; } }" href="?skip=0&amp;startDate=03%2F14%2F2018&amp;endDate=03%2F14%2F2018&amp;sort=date">This Week</a>
+                                    </li>
+                                    <li>
+                                        <a data-query-link="{ &quot;delta&quot; : { &quot;startDate&quot; : &quot;03/13/2018&quot;, &quot;endDate&quot; : &quot;03/19/2018&quot;, &quot;skip&quot; : 0 } }" data-sv-timewindow="" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;events_custom_event_list_filter_filter_relative_dates&quot;, &quot;label&quot; : &quot;This Week&quot; } }" href="?skip=0&amp;startDate=03%2F13%2F2018&amp;endDate=03%2F19%2F2018&amp;sort=date" class="selected">This Month</a>
+                                    </li>
+                                </ul>
+                                <div class="calendar-label">
+                                    <span>Show Events Between</span>
+                                </div>
+                                <div class="daterange-input-wrapper">
+                                    <input type="text" class="txt_daterange_calendar input-text" placeholder="DD/MM/YYYY">
+                                    <span>and</span>
+                                    <input type="text" class="txt_daterange_calendar input-text" placeholder="DD/MM/YYYY">
+                                </div>
+                                <div class="daterange-calendar daterange_calendar">
+                                    <div class="date-picker-wrapper no-shortcuts  no-topbar  inline-wrapper no-gap single-month" unselectable="on" style="user-select: none;">
+                                        <div class="month-wrapper">
+                                            <table class="month1" cellspacing="0" border="0" cellpadding="0">
+                                                <thead>
+                                                    <tr class="caption"><th class="calendar-control" colspan="2"><span class="prev"><i class="fa fa-caret-left calendar-prev"></i></span></th><th colspan="3" class="month-name">April</th><th class="calendar-control" colspan="2"><span class="next"><i class="fa fa-caret-right calendar-next"></i></span></th></tr>
+                                                    <tr class="week-name">
+                                                        <th>Su</th>
+                                                        <th>M</th>
+                                                        <th>T</th>
+                                                        <th>W</th>
+                                                        <th>Th</th>
+                                                        <th>F</th>
+                                                        <th>Sa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><div time="1519542000000" class="day lastMonth  invalid"></div></td>
+                                                        <td><div time="1519628400000" class="day lastMonth  invalid"></div></td>
+                                                        <td><div time="1519714800000" class="day lastMonth  invalid"></div></td>
+                                                        <td><div time="1519801200000" class="day lastMonth  invalid"></div></td>
+                                                        <td><div time="1519887600000" class="day toMonth  invalid">1</div></td>
+                                                        <td><div time="1519974000000" class="day toMonth  invalid">2</div></td>
+                                                        <td><div time="1520060400000" class="day toMonth  invalid">3</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div time="1520146800000" class="day toMonth  valid">4</div></td>
+                                                        <td><div time="1520233200000" class="day toMonth  valid">5</div></td>
+                                                        <td><div time="1520319600000" class="day toMonth  valid">6</div></td>
+                                                        <td><div time="1520406000000" class="day toMonth  invalid">7</div></td>
+                                                        <td><div time="1520492400000" class="day toMonth  invalid">8</div></td>
+                                                        <td><div time="1520578800000" class="day toMonth  invalid">9</div></td>
+                                                        <td><div time="1520665200000" class="day toMonth  invalid">10</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div time="1520751600000" class="day toMonth  invalid">11</div></td>
+                                                        <td><div time="1520838000000" class="day toMonth  invalid">12</div></td>
+                                                        <td><div time="1520924400000" class="day toMonth  invalid real-today checked first-date-selected">13</div></td>
+                                                        <td><div time="1521010800000" class="day toMonth  invalid  checked">14</div></td>
+                                                        <td><div time="1521097200000" class="day toMonth  invalid  checked">15</div></td>
+                                                        <td><div time="1521183600000" class="day toMonth  invalid  checked">16</div></td>
+                                                        <td><div time="1521270000000" class="day toMonth  invalid  checked">17</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div time="1521356400000" class="day toMonth  invalid  checked">18</div></td>
+                                                        <td><div time="1521442800000" class="day toMonth  invalid  checked last-date-selected">19</div></td>
+                                                        <td><div time="1521529200000">20</div></td>
+                                                        <td><div time="1521615600000">21</div></td>
+                                                        <td><div time="1521702000000">22</div></td>
+                                                        <td><div time="1521788400000">23</div></td>
+                                                        <td><div time="1521874800000">24</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div time="1521961200000">25</div></td>
+                                                        <td><div time="1522047600000">26</div></td>
+                                                        <td><div time="1522134000000">27</div></td>
+                                                        <td><div time="1522220400000">28</div></td>
+                                                        <td><div time="1522306800000">29</div></td>
+                                                        <td><div time="1522393200000">30</div></td>
+                                                        <td><div time="1522479600000">31</div></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div style="clear:both;height:0;font-size:0;"></div>
+                                            <div class="time"><div class="time1"></div><div class="time2"></div></div>
+                                            <div style="clear:both;height:0;font-size:0;"></div>
+                                        </div>
+                                        <div class="footer"></div>
+                                        <div class="date-range-length-tip" style="display: none;"></div>
+                                    </div>
+                                </div>
+                            </div><!-- End Calendar -->
+                    
+                            <h4>Categories</h4>
+                            <ul class="filter-items">
+                                <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Airport District</label></li>
+                                <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Diamond District</label></li>
+                                <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Downtown</label></li>
+                                <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">Jack London Square</label></li>
+                                <li><input type="checkbox" name="subcatids" id="subcat-{{@row}}" class="shared-input input-checkbox" value="{{value}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_check", "label" : "{{label}}" } }'> <label for="subcat-{{@row}}">District 9</label></li>
+                                <li class="showmore" data-sv-filter-showmore data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_subcats_showmore" } }'>View More</li>
+                                
+                            </ul>
+                            
+                            <a href="#" class="clear-filters" data-sv-clear-filters="">Clear Filters</a>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div><!-- desktop filters -->
+        
+            <div class="results-wrapper">
+                <div class="results" data-sv-content-height>
+        
+                    <div class="shared-items-container">
+
+                        <div class="shared-map-container" data-sv-map-container="" >
+                            <div class="item-list shared-items">
+                                <div class="item-list-header">
+                                    <h3>Results</h3>
+                                    <div class="map-counter" data-sv-map-items-counter></div>
+                                </div>
+                                <div class="container" data-sv-map-items>
+                                    <ul class="map-list">
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                        <img src="includes/public/assets/images/listings/listing-img.png" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' ></a></h2>
+                                                    <p class="address distance"> Miles From You</p>
+                                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i></a></p>
+                                                    <p class="address"></p>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix buttons" data-sv-map-pager></div>
+                            </div>
+                        
+                            <div id="map" class="shared-map">
+                                <div class="gMapContainer" data-gmapcontainer="">
+                                    <div class="gMapHolder" data-mapholder="" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div><!-- shared map container -->
+        
+                        <div class="shared-items">
+                            <div class="container" data-sv-items-wrapper="" data-sv-items>
+                                <div class="shared-item item featured" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="feat-badge">
+                                            Featured
+                                        </div>
+                                        <div class="img-inner">
+                                            <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="date-block">
+                                            <span>NOV</span>
+                                            <span>26</span>
+                                        </div>
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="date-block">
+                                            <span>NOV</span>
+                                            <span>26</span>
+                                        </div>
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="date-block">
+                                            <span>NOV</span>
+                                            <span>26</span>
+                                        </div>
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="date-block">
+                                            <span>NOV</span>
+                                            <span>26</span>
+                                        </div>
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="date-block">
+                                            <span>NOV</span>
+                                            <span>26</span>
+                                        </div>
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="date-block">
+                                            <span>NOV</span>
+                                            <span>26</span>
+                                        </div>
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                                <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                    <div class="image-container">
+                                        <div class="date-block">
+                                            <span>NOV</span>
+                                            <span>26</span>
+                                        </div>
+                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="contents">
+                                        <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Bridges of Montrose Golf and Country Club</a></h2>
+                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                        <div class="listing-links">
+                                            <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                            <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div data-dtn-beacon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div><!-- results wrapper -->
+        
+            <div class="listings-bottom">
+                <div class="left-panel">
+                    <div class="back-to-btn" data-sv-back-up>Back To Top <i class="fa fa-long-arrow-up"></i></div>
+                </div>
+                <div class="right-panel pagination-container bottom-container">
+                    <div data-sv-pager>
+                        <div class="pagination-cont">
+                            <ul class="pagination">
+                                <li>
+                                    <a data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
+                                        <i class="fa fa-caret-left"></i>
+                                        <i class="fa fa-caret-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pagination-prev" data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
+                                        <i class="fa fa-caret-left"></i>
+                                    </a>
+                                </li>
+                                <li class="tally">1-9 of 100</li>
+                                <li>
+                                    <a class="pagination-next" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
+                                        <i class="fa fa-caret-right"></i>
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- listings bottom -->
+        </div>
+        <!-- End Listings -->
+        <div class="carousel">
+            <div class="slider">
+                <div class="arrow-cont"></div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/">
+                        <div class="img-cont">
+                            <img src="includes/public/assets/images/carousel.png" alt="">
+                        </div>
+                        <div class="slide-content">
+                            <h4>the stoned house</h4>
+                            <h6>American Eatery</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    var root = $(".carousel");
+                    var slider = root.find(".slider");
+                    var arrows = root.find(".arrow-cont");
+                    slider.slick({
+                        infinite: true,
+                        arrows: true,
+                        dots: false,
+                        autoplay: false,
+                        prevArrow: '<div class="custom-arrow prev"><div type="button" data-role="none" class="slick-prev" aria-label="previous"><i class="fas fa-angle-left"></i></div></div>',
+                        nextArrow: '<div class="custom-arrow next"><div type="button" data-role="none" class="slick-next" aria-label="next"><i class="fas fa-angle-right"></i></div></div>',
+                        appendArrows: arrows,
+                        variableWidth: true,
+                        centerMode: true,
+                        slidesToShow: 5,
+                        slide: ".item"
+                    });
+                    $(window).on('resize orientationchange', function() {
+                        slider.slick('resize');
+                    });
+                });
+            </script> 
+        </div><!-- carousel -->
+    </section>
+    <!--body-section-->
+
+    <!-- /////  FOOTER INCLUDE  ////// -->
     <div w3-include-html="footer.html"></div>
 
-</div>
+    <!-- !!!!!!!!!!!! DO NOT USE THIS FILE FOR SHELL SETUP !!!!!!!!!!!! -->
+    <script type="text/javascript" src="js/w3.js"></script>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-<!-- !!!!!!!!!!!! DO NOT USE THIS FILE FOR SHELL SETUP !!!!!!!!!!!! -->
-<script type="text/javascript" src="js/w3.js"></script>
-<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <script type="text/javascript" src="js/nav.js"></script>
 
-<script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript">
 
-<script>
-    var root = $('[data-guid="{{guid}}"]');
-    $(document).foundation();                
-    
-    var interiorNav = $('[data-guid="interior-nav"]');
-    var toggle = interiorNav.find('.toggle');
-    var menu = interiorNav.find('.menu');
-    var submenuButtons = interiorNav.find('.open-submenu');
-    toggle.click(function() {
-        menu.slideToggle();
-        return false;
-    });
-    submenuButtons.click(function() {
-        var button = $(this);
-        var submenu = button.next('ul');
-        button.toggleClass('open');
-        submenu.slideToggle(function() {
-            submenu.toggleClass('open');
+        //Search specific 
+        $("body").on("click", "[data-toggle-search]", function () {
+            $("[data-sv-header-section]").toggleClass("search-active");
         });
-        return false;
-    });                                             
-</script>
 
-<script type="text/javascript">
+        $("body").on("click", "[data-toggle-search-fixed]", function () {
+            $("[data-sv-header-section-fixed]").toggleClass("search-active");
+        });
 
-    //Weather 
-    
-    $('body').on('click', '[data-sv-weathercont]', function() {
-        $('[data-sv-weatherdd]').toggleClass('active');
-        $('[data-sv-weathercont]').toggleClass('active');
-    });
+    </script>
+    <script type="text/javascript">
+        // specific display settings for list view
+        var root = $('.shared-list');
 
-    //Search specific 
+        root.find('a[data-sv-viewby]').click(function (e) {
+            e.preventDefault();
+            var viewby = $(this).attr('data-sv-viewby');
+            var layout = $('[data-sv-layout]');
 
-     $('body').on('click', '[data-sv-sitesearch-icon]', function() {
-        $('[data-sv-sitesearchdd]').toggleClass('active');
-    });
-     $('body').on('click','[data-sv-sitesearchdd]', function() {
-        $(this).toggleClass('active');
-    });
-     $('body').on('click','[data-sv-sitesearchmobile]', function() {
-        $('[data-sv-sitesearchddmobile]').toggleClass('active');
-    });
-     $('body').on('click','[data-sv-searchclosemobile]', function() {
-        $('[data-sv-sitesearchddmobile]').toggleClass('active');
-    });
-    
-</script>
+            $('a[data-sv-viewby].active').removeClass('active');
+            $('a[data-sv-viewby="' + viewby + '"]').toggleClass('active');
 
+            layout.removeClass('layout-grid')
+                .removeClass('layout-list')
+                .removeClass('layout-map');
+
+            layout.addClass('layout-' + viewby);
+
+            // specific display settings for list view
+            if (viewby === 'list') {
+                $('[data-sv-items-wrapper]')
+                    .removeClass('grid-view map-vew')
+                    .addClass('list-view');
+            }
+
+            // specific display settings for grid view
+            if (viewby === 'grid') {
+                $('[data-sv-items-wrapper]')
+                    .removeClass('list-view map-view')
+                    .addClass('grid-view');
+            }
+
+        });
+
+        if (root.hasClass('layout-list')) {
+            $('[data-sv-items-wrapper]')
+                .removeClass('grid-view map-view')
+                .addClass('list-view');
+
+            root.foundation('equalizer', 'reflow');
+        }
+
+        // specific display settings for grid view
+        if (root.hasClass('layout-grid')) {
+            $('[data-sv-items-wrapper]')
+                .removeClass('list-view map-view')
+                .addClass('grid-view');
+        }
+    </script>
 </body>
+
 </html>

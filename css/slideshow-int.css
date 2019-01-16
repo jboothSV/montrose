@@ -77,6 +77,10 @@
     color: white;
 }
 
+.header-slideshow-int .item .slide-content .desc a {
+    color: #3dc6f0;
+}
+
 @media (min-width: 641px) {
     .header-slideshow-int {
         padding-bottom: 25px;
