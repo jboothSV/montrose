@@ -47,11 +47,13 @@
     }
     .social-icons.desktop {
         display: flex;
+        margin-left: auto;
     }
     .social-icons.desktop .social-icon {
-        font-size: 24px;
+        font-size: 22px;
         color: #15808f;
         margin-right: 15px;
+        font-weight: normal;
     }
     .social-icons.desktop .social-icon:last-child {
         margin-right: 0;

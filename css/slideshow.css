@@ -120,11 +120,18 @@
         left: 6%;
         bottom: 75px;
         width: 32%;
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    .header-slideshow .home-header .item.slick-current .slide-content {
+        transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+        transform: translateX(0);
+        opacity: 1;
     }
     .header-slideshow .home-header .item .slide-content h2 {
-        font-size: 34px;
+        font-size: 33px;
         line-height: 38px;
-        margin-bottom: 10px;
+        margin: 0;
     }
     .header-slideshow .home-header .item .slide-content .desc {
         display: block;

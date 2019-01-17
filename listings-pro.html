@@ -22,6 +22,8 @@
     <link href="css/custom_layout-pro.css" rel="stylesheet" type="text/css">
 
     <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/foundation.reveal.js"></script>
@@ -36,7 +38,711 @@
 
 <body>
     <!-- ///// HEADER INCLUDE ///// -->
-    <div w3-include-html="header.html"></div>
+    <!-- <div w3-include-html="header.html"></div> -->
+    
+    <!-- //////  HEADER //////// -->   
+    <div class="alertModule active">
+            <div class="inner">
+                <div class="img-cont">
+                    <img src="includes/public/assets/images/alert.png" alt="">
+                </div>
+                <div class="alert-content">
+                    <h6>special alert message here</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisl libero, euismod ac orci dictum, volutpat placerat purus. Duis tempor mi at diam consequat, ac suscipit risus aliquam. <a href="/">read more</a>
+                    </p>
+                </div>
+                <div class="close-alert" data-close-alert>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        
+        <section class="header-section" data-sv-header-section>
+            <div class="top-nav-cont">
+                <div class="logo">
+                    <a href="/"><img src="includes/public/assets/images/logo.svg" alt="Montrose, Colorado logo"></a>
+                </div>
+                <div class="header-right">
+                    <nav class="nav-primary">
+                        <div class="primary-item has-dropdown">
+                            <div class="item-inner">
+                                <a href="/">outdoors</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                            <div class="nav-dropdown">
+                                <style>
+                                    .nav-slide {
+                                        grid-row: 1/2;
+                                        -ms-grid-row: 1;
+                                        -ms-grid-row-span: 1;
+                                        grid-column: 1/2;
+                                        -ms-grid-column: 1;
+                                        -ms-grid-column-span: 1;
+                                        width: 100%;
+                                        max-width: 200px;
+                                    }
+                                    .nav-slide .img-cont {
+                                        padding: 25px 20px 0;
+                                    }
+                                    .nav-slide img {
+                                        display: block;
+                                        width: 100%;
+                                        position: relative;
+                                    }   
+                                    .nav-slide .title {
+                                        padding: 20px;
+                                        position: relative;
+                                        z-index: 1;
+                                        transform: translateY(-12px);
+                                    } 
+                                    .nav-slide .title::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: url("includes/public/assets/images/orange-splash.png");
+                                        background-repeat: no-repeat;
+                                        background-size: 100% 95%;
+                                        z-index: -1;
+                                    }
+                                    .nav-slide .title h3 {
+                                        font-size: 24px;
+                                        line-height: 28px;
+                                        margin: 0;
+                                        text-align: center;
+                                        text-transform: none;
+                                        color: white;
+                                    }
+                                </style>
+                                <div class="nav-slide">
+                                    <a href="/">
+                                        <div class="img-cont">
+                                            <img src="includes/public/assets/images/nav-slide.png" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <h3>outdoors</h3>
+                                        </div>
+                                    </a>
+                                </div><!-- nav slide -->
+                                <ul class="nav-list">
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                            <li class="has-submenu">
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="primary-item">
+                            <div class="item-inner">
+                                <a href="/">things to do</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                        </div>
+                        <div class="primary-item">
+                            <div class="item-inner">
+                                <a href="/">events</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                        </div>
+                        <div class="primary-item">
+                            <div class="item-inner">
+                                <a href="/">hotels</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                        </div>
+                        <div class="primary-item has-dropdown">
+                            <div class="item-inner">
+                                <a href="/">restaurants</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                            <div class="nav-dropdown">
+                                <style>
+                                    .nav-slide {
+                                        grid-row: 1/2;
+                                        -ms-grid-row: 1;
+                                        -ms-grid-row-span: 1;
+                                        grid-column: 1/2;
+                                        -ms-grid-column: 1;
+                                        -ms-grid-column-span: 1;
+                                        width: 100%;
+                                        max-width: 200px;
+                                    }
+                                    .nav-slide .img-cont {
+                                        padding: 25px 20px 0;
+                                    }
+                                    .nav-slide img {
+                                        display: block;
+                                        width: 100%;
+                                        position: relative;
+                                    }   
+                                    .nav-slide .title {
+                                        padding: 20px;
+                                        position: relative;
+                                        z-index: 1;
+                                        transform: translateY(-12px);
+                                    } 
+                                    .nav-slide .title::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: url("includes/public/assets/images/orange-splash.png");
+                                        background-repeat: no-repeat;
+                                        background-size: 100% 95%;
+                                        z-index: -1;
+                                    }
+                                    .nav-slide .title h3 {
+                                        font-size: 24px;
+                                        line-height: 28px;
+                                        margin: 0;
+                                        text-align: center;
+                                        text-transform: none;
+                                        color: white;
+                                    }
+                                </style>
+                                <div class="nav-slide">
+                                    <a href="/">
+                                        <div class="img-cont">
+                                            <img src="includes/public/assets/images/nav-slide.png" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <h3>Things to Do</h3>
+                                        </div>
+                                    </a>
+                                </div><!-- nav slide -->
+                                <ul class="nav-list">
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                            <li class="has-submenu">
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="utilities">
+                        <div class="weather-cont">
+                            <a href="/">
+                                <img src="includes/public/assets/images/weather-icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="search-cont">
+                            <form class="shared-form" action="/" method="GET">
+                                <input type="text" class="shared-input" placeholder="Search">
+                                <div class="input-bg"></div>
+                                <button class="shared-button" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                            <div class="toggle-search" data-toggle-search>
+                                <i class="open-search fas fa-search"></i>
+                                <i class="close-search fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobilenav">
+                <div class="controls">
+                    <i class="open-mobile fas fa-bars"></i>
+                    <i class="close-mobile fas fa-times"></i>
+                </div>
+                <div class="mobile-dd">
+                    <div class="dd-top">
+                        <form class="shared-form" action="/" method="GET">
+                            <input type="text" class="shared-input" placeholder="Search">
+                            <div class="input-bg"></div>
+                            <button class="shared-button" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <div class="weather-cont">
+                            <a href="#">
+                                <img style="width:26px;" src="includes/public/assets/images/weather-icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="nav-list primary">
+                        <li>
+                            <div class="item-inner">
+                                <a href="/">places to stay</a>
+                            </div>
+                        </li>
+                        <li class="has-submenu">
+                            <div class="item-inner">
+                                <a href="/">things to do</a>
+                                <div class="toggle-menu">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="item-inner">
+                                        <a href="/">2nd Level Navigation Item</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-inner">
+                                        <a href="/">2nd Level Navigation Item</a>
+                                    </div>
+                                </li>
+                                <li class="has-submenu">
+                                    <div class="item-inner">
+                                        <a href="/">2nd Level Navigation Item</a>
+                                        <div class="toggle-menu">
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="item-inner">
+                                                <a href="/">3rd Level Navigation Item</a>
+                                            </div>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <div class="item-inner">
+                                                <a href="/">3rd Level Navigation Item</a>
+                                                <div class="toggle-menu">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="item-inner">
+                                                        <a href="/">4th Level Navigation Item</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item-inner">
+                                                        <a href="/">4th Level Navigation Item</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <a href="/">3rd Level Navigation Item</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-inner">
+                                                <a href="/">3rd Level Navigation Item</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="item-inner">
+                                        <a href="/">2nd Level Navigation Item</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-inner">
+                                        <a href="/">2nd Level Navigation Item</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-inner">
+                                        <a href="/">2nd Level Navigation Item</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-inner">
+                                        <a href="/">2nd Level Navigation Item</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="item-inner">
+                                <a href="/">events</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-inner">
+                                <a href="/">hotels</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-inner">
+                                <a href="/">restaurants</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav-list footer">
+                        <li>
+                            <a href="/">About Montrose</a>
+                        </li>
+                        <li>
+                            <a href="/">Downtown Visitor Center</a>
+                        </li>
+                        <li>
+                            <a href="/">Shared Experiences</a>
+                        </li>
+                        <li>
+                            <a href="/">Visitor Guide</a>
+                        </li>
+                        <li>
+                            <a href="/">Videos</a>
+                        </li>
+                        <li>
+                            <a href="/">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="/">Site Map</a>
+                        </li>
+                        <li>
+                            <a href="/">Copyright &amp; Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="header-section fixed" data-sv-header-section-fixed>
+            <div class="top-nav-cont">
+                <div class="logo">
+                    <a href="/"><img src="includes/public/assets/images/logo.svg" alt="Montrose, Colorado logo"></a>
+                </div>
+                <div class="header-right">
+                    <nav class="nav-primary">
+                        <div class="primary-item">
+                            <div class="item-inner">
+                                <a href="/">outdoors</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                        </div>
+                        <div class="primary-item">
+                            <div class="item-inner">
+                                <a href="/">things to do</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                        </div>
+                        <div class="primary-item">
+                            <div class="item-inner">
+                                <a href="/">events</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                        </div>
+                        <div class="primary-item">
+                            <div class="item-inner">
+                                <a href="/">hotels</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                        </div>
+                        <div class="primary-item has-dropdown">
+                            <div class="item-inner">
+                                <a href="/">restaurants</a>
+                                <div class="dropdown-support"></div>
+                            </div>
+                            <div class="nav-dropdown">
+                                <style>
+                                    .nav-slide {
+                                        grid-row: 1/2;
+                                        -ms-grid-row: 1;
+                                        -ms-grid-row-span: 1;
+                                        grid-column: 1/2;
+                                        -ms-grid-column: 1;
+                                        -ms-grid-column-span: 1;
+                                        width: 100%;
+                                        max-width: 200px;
+                                    }
+                                    .nav-slide .img-cont {
+                                        padding: 25px 20px 0;
+                                    }
+                                    .nav-slide img {
+                                        display: block;
+                                        width: 100%;
+                                        position: relative;
+                                    }   
+                                    .nav-slide .title {
+                                        padding: 20px;
+                                        position: relative;
+                                        z-index: 1;
+                                        transform: translateY(-12px);
+                                    } 
+                                    .nav-slide .title::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: url("includes/public/assets/images/orange-splash.png");
+                                        background-repeat: no-repeat;
+                                        background-size: 100% 95%;
+                                        z-index: -1;
+                                    }
+                                    .nav-slide .title h3 {
+                                        font-size: 24px;
+                                        line-height: 28px;
+                                        margin: 0;
+                                        text-align: center;
+                                        text-transform: none;
+                                        color: white;
+                                    }
+                                </style>
+                                <div class="nav-slide">
+                                    <a href="/">
+                                        <div class="img-cont">
+                                            <img src="includes/public/assets/images/nav-slide.png" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <h3>Things to Do</h3>
+                                        </div>
+                                    </a>
+                                </div><!-- nav slide -->
+                                <ul class="nav-list">
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                            <li class="has-submenu">
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item-inner">
+                                                            <a href="/">The 4th Kind</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item-inner">
+                                                    <a href="/">3rd Level Navigation Item</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-inner">
+                                            <a href="/">2nd Level Navigation Item</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="utilities">
+                        <div class="weather-cont">
+                            <a href="/">
+                                <img src="includes/public/assets/images/weather-icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="search-cont">
+                            <form class="shared-form" action="/" method="GET">
+                                <input type="text" class="shared-input" placeholder="Search">
+                                <div class="input-bg"></div>
+                                <button class="shared-button" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                            <div class="toggle-search" data-toggle-search-fixed>
+                                <i class="open-search fas fa-search"></i>
+                                <i class="close-search fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- ////// HEADER SLIDESHOW //////// -->
     <section class="header-slideshow-int">
@@ -149,28 +855,86 @@
                     var header = $(".header-slideshow-int");
                     var bg = list.find(".listings-page-bg");
                     var dist;
-                    if(!header){
-                        dist = list.offset().top;
-                    }else{
-                        dist = list.offset().top - header.height();
+
+                    function setPosition(){
+                        var alert = $(".alertModule");
+                        console.log(alert.outerHeight())
+                        if(!header){
+                            if(!alert){
+                                dist = list.offset().top;
+                            }
+                            if(alert){
+                                if(!alert.hasClass("active")){
+                                    dist = list.offset().top - alert.outerHeight();
+                                }else{
+                                    dist = list.offset().top + alert.outerHeight();
+                                }
+                            }
+                        }else{
+                            if(!alert){
+                                dist = list.offset().top - header.height();
+                            }
+                            if(alert){
+                                if(!alert.hasClass("active")){
+                                    dist = list.offset().top - header.height();
+                                }else{
+                                    dist = list.offset().top - header.height() - alert.outerHeight();
+                                }
+                            }
+                        }
+                        bg.css("height", dist);
                     }
-                    bg.css("height", dist);
+
+                    setPosition();
+
+                    $(window).on("resize", _.debounce(function(){
+                        setPosition();
+                    }, 250));
                 });
             </script>
 
-            <ul class="options">
-                <li><a class="view-option active" href="#" data-sv-viewby="grid"><i class="fa fa-th"></i> Grid</a></li>
-                <li><a class="view-option" href="#" data-sv-viewby="list"><i class="fa fa-list"></i> List</a></li>
-                <li><a class="view-option" href="#" data-sv-viewby="map"><i class="fa fa-map-marker"></i> Map</a></li>
-                <li class="sort-title" data-sv-distanceSort>Sort By:</li>
-                <li data-sv-distanceSort><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "qualityScore" } }' data-query-link='{ "delta" : { "sort" : "qualityScore", "skip" : "", "dtnids" :"" }, "selectedIgnore" : ["skip", "dtnids"] }'>Recommended</a><span class="distanceSort"> | </span></li>
-                <li class="distanceSort"><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "distance" } }' data-query-link='{ "delta" : { "sort" : "distance", "skip" : "", "dtnids" : "" }, "selectedIgnore" : ["skip", "dtnids"] }'>Distance</a></li>
-                <li class="pagination" data-sv-desktop-pager>
-                <div class="pagination-container top-container">
-                    <div data-sv-pager></div>
-                    </div>
-                </li>
-            </ul><!-- options -->
+            <div class="options-container">
+                <ul class="options">
+                    <li class="title">view by:</li>
+                    <li><a class="view-option active" href="#" data-sv-viewby="grid"><i class="fa fa-th"></i> Grid</a></li>
+                    <li><a class="view-option" href="#" data-sv-viewby="list"><i class="fa fa-list"></i> List</a></li>
+                    <li><a class="view-option" href="#" data-sv-viewby="map"><i class="fas fa-map-marker-alt"></i> Map</a></li>
+                    <li class="sort-title" data-sv-distanceSort>Sort By:</li>
+                    <li class="active" data-sv-distanceSort><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "qualityScore" } }' data-query-link='{ "delta" : { "sort" : "qualityScore", "skip" : "", "dtnids" :"" }, "selectedIgnore" : ["skip", "dtnids"] }'>Recommended</a><span class="distanceSort"> | </span></li>
+                    <li class="distanceSort"><a data-gtm-click data-gtm-vars='{ "tCore" : { "label" : "distance" } }' data-query-link='{ "delta" : { "sort" : "distance", "skip" : "", "dtnids" : "" }, "selectedIgnore" : ["skip", "dtnids"] }'>Distance</a></li>
+                    <li class="pagination" data-sv-desktop-pager>
+                    <div class="pagination-container top-container">
+                        <div data-sv-pager>
+                            <ul class="pagination">
+                                <li>
+                                    <a data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
+                                        <i class="fa fa-caret-left"></i>
+                                        <i class="fa fa-caret-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pagination-prev" data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
+                                        <i class="fa fa-caret-left"></i>
+                                    </a>
+                                </li>
+                                <li class="tally">1-9 of 100</li>
+                                <li>
+                                    <a class="pagination-next" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
+                                        <i class="fa fa-caret-right"></i>
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         
             <ul class="mobile-options" data-sv-mobile-options="">
                 <li>
@@ -308,7 +1072,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" data-sv-mobile-options-display="">View <i class="fa fa-caret-down"></i></a>
+                    <a href="#" data-sv-mobile-options-display="">View By<i class="fa fa-caret-down"></i></a>
                     <div class="options-dropdown">
                         <ul class="options">
                             <li><a href="#" class="active" data-sv-viewby="grid"><i class="fa fa-th"></i> Grid</a></li>
@@ -318,7 +1082,7 @@
                     </div>
                 </li>
                 <li data-sv-distanceSort>
-                    <a href="#" data-sv-mobile-options-display="">Sort <i class="fa fa-caret-down"></i></a>
+                    <a href="#" data-sv-mobile-options-display="">Sort By<i class="fa fa-caret-down"></i></a>
                     <div class="options-dropdown">
                         <ul class="options">
                             <li class="title">Sort By:</li>
@@ -506,29 +1270,198 @@
                                 <div class="container" data-sv-map-items>
                                     <ul class="map-list">
                                         <li>
-                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                            <div class="shared-item item featured" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
                                                 <div class="image-container">
-                                                    <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
-                                                        <img src="includes/public/assets/images/listings/listing-img.png" class="thumb">
-                                                    </a>
+                                                    <div class="feat-badge">
+                                                        Featured
+                                                    </div>
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
                                                 </div>
                                                 <div class="contents">
-                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' ></a></h2>
-                                                    <p class="address distance"> Miles From You</p>
-                                                        <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i></a></p>
-                                                    <p class="address"></p>
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div data-dtn-beacon></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shared-item item" data-type="listing" data-recid="{{recid}}" data-qualityscore="{{qualityScore}}" data-rankid="{{rankid}}" data-dtn-rank="{{dtn.rank}}" data-rankname="{{%rankname}}" data-gtm-vars='{ "tCore" : { "label" : "{{:isDTN}}dtn - {{/}}{{%%title}}", "recid" : "{{recid}}", "row" : "{{@row}}", "globalRow" : "{{globalRow}}" } }'>
+                                                <div class="image-container">
+                                                    <div class="img-inner">
+                                                        <a href="{{detailURL}}"{{:isDTN}} data-dtn-link{{/}} data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_image" }, "tClient" : { "ot" : "Image" } }'>
+                                                            <img src="includes/public/assets/images/listings/listing-img.png" onerror="this.src='{{~var.placeholder.getThumbnailUrl(helpers.var.image_settings)}}';this.onerror=null;" class="thumb">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contents">
+                                                    <h2><a href="{{detailURL}}" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_detail_title" }, "tClient" : { "ot" : "Text" } }' >Quality Inn &amp; Suites</a></h2>
+                                                    <p class="address"><a data-click-placemark href="#" data-gtm-click data-gtm-vars='{ "tCore" : { "action" : "{{~var.template}}_icon_map_it" }, "tClient" : { "eventAction" : "Map", "lt" : "Map", "ot" : "Button" } }' data-sv-open-map><i class="fa fa-map-marker"></i>2751 Commercial Way Montrose, CO 81401</a></p>
+                                                    <div class="listing-links">
+                                                        <a href="/"><i class="fas fa-info-circle"></i>View Details</a>
+                                                        <a href="/">Visit Website<i class="fas fa-caret-right"></i></a>
+                                                    </div>
                                                 </div>
                                                 <div data-dtn-beacon></div>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="clearfix buttons" data-sv-map-pager></div>
+                                <div class="buttons" data-sv-map-pager="">
+                                    <button class="disabled map-pager-button" data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;custom_list_map_pager_prv&quot; } }" data-sv-map-pager-button="" href="?sort=qualityScore">Prev</button>
+                                    <button class="map-pager-button" data-row="13" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;12&quot; } }" data-gtm-click="" data-gtm-vars="{ &quot;tCore&quot; : { &quot;action&quot; : &quot;custom_list_map_pager_nxt&quot; } }" data-sv-map-pager-button="" href="?skip=12&amp;sort=qualityScore">Next</button></div>
                             </div>
                         
                             <div id="map" class="shared-map">
                                 <div class="gMapContainer" data-gmapcontainer="">
-                                    <div class="gMapHolder" data-mapholder="" style="display: none;"></div>
+                                    <div class="gMapHolder" data-mapholder="" style="background:url('includes/public/assets/images/listings/listings-map.jpg')center/cover no-repeat;"></div>
                                 </div>
                             </div>
                         </div><!-- shared map container -->
@@ -720,37 +1653,39 @@
             </div><!-- results wrapper -->
         
             <div class="listings-bottom">
-                <div class="left-panel">
-                    <div class="back-to-btn" data-sv-back-up>Back To Top <i class="fa fa-long-arrow-up"></i></div>
-                </div>
-                <div class="right-panel pagination-container bottom-container">
-                    <div data-sv-pager>
-                        <div class="pagination-cont">
-                            <ul class="pagination">
-                                <li>
-                                    <a data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
-                                        <i class="fa fa-caret-left"></i>
-                                        <i class="fa fa-caret-left"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="pagination-prev" data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
-                                        <i class="fa fa-caret-left"></i>
-                                    </a>
-                                </li>
-                                <li class="tally">1-9 of 100</li>
-                                <li>
-                                    <a class="pagination-next" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
-                                        <i class="fa fa-caret-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
-                                        <i class="fa fa-caret-right"></i>
-                                        <i class="fa fa-caret-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="inner">
+                    <div class="left-panel">
+                        <div class="back-to-btn" data-sv-back-up>Back To Top <i class="fas fa-long-arrow-alt-up"></i></div>
+                    </div>
+                    <div class="right-panel pagination-container bottom-container">
+                        <div data-sv-pager>
+                            <div class="pagination-cont">
+                                <ul class="pagination">
+                                    <li>
+                                        <a data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
+                                            <i class="fa fa-caret-left"></i>
+                                            <i class="fa fa-caret-left"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="pagination-prev" data-row="" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;&quot; } }" href="?sort=qualityScore">
+                                            <i class="fa fa-caret-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="tally">1-9 of 100</li>
+                                    <li>
+                                        <a class="pagination-next" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
+                                            <i class="fa fa-caret-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" data-row="10" data-query-link="{ &quot;delta&quot; : { &quot;skip&quot; : &quot;9&quot; } }" href="?skip=9&amp;sort=qualityScore">
+                                            <i class="fa fa-caret-right"></i>
+                                            <i class="fa fa-caret-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -873,6 +1808,65 @@
                 });
             </script> 
         </div><!-- carousel -->
+        <div class="spotlight-panel alternate controlled-width">
+            <div class="title-cont">
+                <h2>start your journey</h2>
+            </div>
+            <div class="inner-panel">
+                <div class="spotlight">
+                    <a href="/">
+                        <div class="title">
+                            <h6>astronomy</h6>
+                        </div>
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="spotlight">
+                    <a href="/">
+                        <div class="title">
+                            <h6>biking</h6>
+                        </div>
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="spotlight">
+                    <a href="/">
+                        <div class="title">
+                            <h6>birding</h6>
+                        </div>
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="spotlight">
+                    <a href="/">
+                        <div class="title">
+                            <h6>camping</h6>
+                        </div>
+                        <img src="includes/public/assets/images/spotlight.png" alt="">
+                    </a>
+                    <div class="slide-content">
+                        <p class="desc">
+                            Black Canyon offers night sky viewing opportunities throughout the year. The park is always open to stargaze on your own. <a href="/">read more</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- spotlight panel -->
     </section>
     <!--body-section-->
 
@@ -946,6 +1940,21 @@
                 .addClass('grid-view');
         }
     </script>
+
+<script type="text/javascript">
+//alert module
+
+    $(document).ready(function(){
+        $("body").on("click", "[data-close-alert]", function(){
+            var alert = $(".alertModule");
+            alert.addClass("active");
+            alert.slideUp(function(){
+                alert.removeClass("active");
+            });
+        });
+    });
+
+</script>
 </body>
 
 </html>

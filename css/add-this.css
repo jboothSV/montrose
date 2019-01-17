@@ -2,8 +2,9 @@
     position: absolute;
     bottom: 0;
     right: 15px;
-    padding: 8px 35px 20px;
-    z-index: 1;
+    padding: 8px 35px 12px;
+    z-index: 100;
+    transform: translateY(-30%);
 }
 
 .add-this::after {
@@ -39,9 +40,8 @@
 
 @media (min-width: 1025px) {
     .add-this {
-        right: 8%;
-        padding: 15px 40px;
-        transform: translateY(-50%);
+        right: 10%;
+        padding: 15px 60px;
     }
 }
 

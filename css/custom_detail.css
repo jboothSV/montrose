@@ -52,6 +52,12 @@
     z-index: 1;
 }
 
+@media (min-width: 641px) {
+    .detail-header .img-cont::after {
+        background-size: contain;
+    }
+}
+
 @media (min-width: 1025px) {
     .detail-header .img-cont::after {
         background-size: contain;
@@ -92,6 +98,7 @@
     margin: 0 0 10px;
     font-weight: 700;
     text-transform: none;
+    width: 100%;
 }
 
 .shared-top ul {

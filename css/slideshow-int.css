@@ -97,6 +97,7 @@
     }
     .header-slideshow-int .item .slide-content .desc {
         display: block;
+        font-weight: 400;
     }
     .header-slideshow-int .item .slide-content h2 {
         font-size: 26px;

@@ -119,6 +119,14 @@
                     </div>
                     <div class="img-cont">
                         <img src="includes/public/assets/images/showcase.png" alt="">
+                        <div class="arrows"><!-- arrows are only presentational and click event will manually trigger Slick next or Slick prev which are hidden -->
+                            <div class="custom-arrow prev">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="custom-arrow next">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide-content">
                         <div class="desktop-title">
@@ -136,6 +144,14 @@
                     </div>
                     <div class="img-cont">
                         <img src="includes/public/assets/images/showcase2.png" alt="">
+                        <div class="arrows">
+                            <div class="custom-arrow prev">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="custom-arrow next">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide-content">
                         <div class="desktop-title">
@@ -153,6 +169,14 @@
                     </div>
                     <div class="img-cont">
                         <img src="includes/public/assets/images/showcase3.png" alt="">
+                        <div class="arrows">
+                            <div class="custom-arrow prev">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="custom-arrow next">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide-content">
                         <div class="desktop-title">
@@ -170,6 +194,14 @@
                     </div>
                     <div class="img-cont">
                         <img src="includes/public/assets/images/showcase.png" alt="">
+                        <div class="arrows">
+                            <div class="custom-arrow prev">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="custom-arrow next">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide-content">
                         <div class="desktop-title">
@@ -187,7 +219,9 @@
                 $(document).ready(function(){
                     var root = $(".showcase");
                     var slider = root.find(".slider");
-                    var arrows = root.find(".arrow-cont");
+                    var prev = slider.find(".item .custom-arrow.prev");
+                    var next = slider.find(".item .custom-arrow.next");
+                    var arrows = slider.find(".arrow-cont");
 
                     slider.slick({
                         infinite: true,
@@ -215,6 +249,14 @@
                                 }
                             }
                         ]
+                    });
+
+                    prev.on("click", function(){
+                        slider.slick("slickPrev");
+                    });
+
+                    next.on("click", function(){
+                        slider.slick("slickNext");
                     });
                     
                 });
@@ -575,6 +617,18 @@
         $("[data-sv-header-section-fixed]").toggleClass("search-active");
     });
     
+</script>
+
+<script type="text/javascript">
+//alert module
+
+    $(document).ready(function(){
+        $("body").on("click", "[data-close-alert]", function(){
+            var alert = $(".alertModule");
+            alert.slideUp();
+        });
+    });
+
 </script>
 
 </body>

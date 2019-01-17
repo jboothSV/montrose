@@ -13,7 +13,7 @@
 // Industry nav 
 
     $("body").on("click", "[data-toggle-industry]", function(){
-        if(window.innerWidth < 641) {
+        if(window.innerWidth < 1025) {
             $(this).closest(".has-submenu").toggleClass("active");
         }
     });

@@ -270,7 +270,9 @@
             <div class="two-col-left">
                 <div class="imagebox">
                     <div class="img-cont">
-                        <img src="includes/public/assets/images/imagebox.png" alt="">
+                        <a href="/">
+                            <img src="includes/public/assets/images/imagebox.png" alt="">
+                        </a>
                     </div>
                     <div class="slide-content">
                         <h5>pancakes</h5>
@@ -365,6 +367,18 @@
         $("[data-sv-header-section-fixed]").toggleClass("search-active");
     });
     
+</script>
+
+<script type="text/javascript">
+//alert module
+
+    $(document).ready(function(){
+        $("body").on("click", "[data-close-alert]", function(){
+            var alert = $(".alertModule");
+            alert.slideUp();
+        });
+    });
+
 </script>
 
 </body>

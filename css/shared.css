@@ -252,13 +252,11 @@ dl {
 */
 
 .header-section {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 999;
     height: 70px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto -70px;
 }
 
 .header-section.fixed {
@@ -306,6 +304,7 @@ dl {
 @media (min-width: 1025px) {
     .header-section {
         height: 110px;
+        margin-bottom: -110px;
     }
     .header-section.fixed {
         display: block;
@@ -354,6 +353,87 @@ dl {
         padding-top: 10px;
     }
 }
+
+.alertModule {
+    padding: 40px 15px;
+    background-color: #15808f;
+}
+
+.alertModule .inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.alertModule .img-cont {
+    margin-bottom: 20px;
+}
+
+.alertModule .img-cont img {
+    display: block;
+    width: 100%;
+}
+
+.alertModule h6 {
+    color: white;
+    font-size: 19px;
+    line-height: 23px;
+    margin: 0;
+}
+
+.alertModule p {
+    color: white;
+    margin: 0;
+}
+
+.alertModule p a {
+    color: white;
+}
+
+.alertModule .close-alert {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, -110%);
+    width: 25px;
+    height: 25px;
+    background-color: #db6027;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.alertModule .close-alert i {
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .alertModule .inner {
+        flex-direction: row;
+    }
+    .alertModule .img-cont {
+        min-width: 130px;
+    }
+    .alertModule .alert-content {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .alertModule {
+        padding: 15px;
+    }
+    .alertModule .alert-content {
+        padding: 10px 60px 0 30px;
+    }
+    .alertModule .close-alert {
+        transform: none;
+    }
+}
 /*
 |-----------------------------------------------------------------------------------------------------------
 | BODY SECTION
@@ -363,7 +443,7 @@ dl {
 .content {
     position: relative;
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 35px;
 }
 
 @media(min-width: 1025px) {
@@ -532,7 +612,7 @@ dl {
     font-family: 'Covered By Your Grace', cursive;
     color: #db6027;
     font-size: 24px;
-    line-height: 26px;
+    line-height: 32px;
     font-weight: 500;
 }
 
@@ -556,10 +636,13 @@ dl {
 
 @media (min-width: 1025px) {
     .intro-panel {
-        margin-bottom: 120px;
+        margin-bottom: 105px;
     }
     .intro-panel .inner-wrapper {
         display: flex;
+    }
+    .intro-panel .title-cont {
+        margin-bottom: 20px;
     }
     .intro-panel .intro-title1,
     .intro-panel .intro-title2 {
@@ -672,6 +755,10 @@ dl {
     display: block;
     margin: 0 auto;
     width: 140px;
+}
+
+.footer .footer-lower .made-by img {
+    height: 100%;
 }
 
 @media (min-width: 641px) {

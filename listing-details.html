@@ -16,7 +16,6 @@
     <link href="css/slideshow-int.css" rel="stylesheet" type="text/css">
     <link href="css/collections.css" rel="stylesheet" type="text/css">
     <link href="css/nav-shared.css" rel="stylesheet" type="text/css">
-    <link href="css/custom_layout.css" rel="stylesheet" type="text/css">
     <link href="css/custom_detail.css" rel="stylesheet" type="text/css">
     <link href="css/add-this.css" rel="stylesheet" type="text/css">
     <link href="css/shared-form.css" rel="stylesheet" type="text/css">
@@ -164,6 +163,18 @@
             });
         });
     </script>
+
+<script type="text/javascript">
+//alert module
+
+    $(document).ready(function(){
+        $("body").on("click", "[data-close-alert]", function(){
+            var alert = $(".alertModule");
+            alert.slideUp();
+        });
+    });
+
+</script>
 
 </body>
 
